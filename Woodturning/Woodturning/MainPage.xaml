@@ -1,14 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Woodturning"
-             x:Class="Woodturning.MainPage">
+             xmlns:local="clr-namespace:WoodturningApp"
+             x:Class="WoodturningApp.MainPage"
+             >
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <!-- Logo -->
+        <Label Text="Welcoming to NMT Woodturning!"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" />
+        <Image x:Name="newLogo" 
+               WidthRequest="100"
+               HeightRequest="100"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+
+
+
+
+        <!-- Drop Down Icon -->
+
+
+        <!-- Button -->
+        <Button/>
+
+        <!-- Button -->
+        <Button/>
+
+        <!-- Button -->
+        <Button/>
+
     </StackLayout>
 
 </ContentPage>
