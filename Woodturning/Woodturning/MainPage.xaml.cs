@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Woodturning;
+using Login;
+using WoodturningApp;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -28,6 +30,14 @@ namespace WoodturningApp
             newLogo.Source = ImageSource.FromResource(fileName, assembly);
         }
 
+        async void bowl_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BowlPage());
+        }
 
+        async void biro_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BiroPage());
+        }
     }
 }
