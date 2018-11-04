@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Woodturning;
 using WoodturningApp;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,13 +13,14 @@ namespace Woodturning
 {
     public partial class App : Application
     {
+        
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
-
+        
         protected override void OnStart()
         {
             // Handle when your app starts
