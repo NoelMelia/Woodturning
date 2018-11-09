@@ -8,7 +8,7 @@
 
     <StackLayout>
             <!-- Logo -->
-        <Label Text="Welcoming to NMT Woodturning!"
+        <Label Text="Welcome to NMT Woodturning!"
                 VerticalOptions="Start" 
                 HorizontalOptions="Center" 
                TextColor="Black"
@@ -16,30 +16,39 @@
                FontAttributes="Bold" />
             <StackLayout  VerticalOptions="Center">
                 <StackLayout Orientation="Horizontal"
-                             BackgroundColor="Black">
+                             >
                     <Image x:Name="newLogo" 
-                            WidthRequest="150"
-                            HeightRequest="150"
+                            WidthRequest="180"
+                            HeightRequest="200"
                             HorizontalOptions="Center"
                            VerticalOptions="Center"
-                           Margin="170,0,0,0"/>
-                    <Picker x:Name="DropDown"
-                            Margin="100,0,0,40"
+                           Margin="150,0,0,0"
+                           
+                           />
+
+                    <Picker x:Name="MainPicker"                          
                             WidthRequest="100"
-                            HeightRequest="50"
+                            HeightRequest="40"
                             HorizontalOptions="Start"
-                           VerticalOptions="End"/>
-                </StackLayout>
+                            VerticalOptions="Center"
+                            Margin="50,0,0,0"
+                            SelectedIndexChanged="MainPicker_SelectedIndexChanged">
+                    </Picker>
+
+
+
+            </StackLayout>
                 <!-- Drop Down Icon -->
 
-
-            <!-- Button -->
+            
+                <!-- Button -->
             <Button x:Name="bowl" 
                     VerticalOptions="Center" 
                     Text="      Bowls     "
                     FontAttributes="Italic"
-                    Margin="0,30,0,0"
-                    Clicked="bowl_Clicked"/>
+                    Margin="20,30,20,0"
+                    Clicked="bowl_Clicked"
+                    BorderRadius="20"/>
 
             <!-- Button -->
             <Button x:Name="biro" 
@@ -47,7 +56,9 @@
                     Text="      Biros     "
                     FontAttributes="Italic"
                     Clicked="biro_Clicked"
-                    Margin="0,30,0,0"/>
+                    Margin="20,30,20,0"
+                    BorderRadius="20"/>
+               
 
             </StackLayout>
 
