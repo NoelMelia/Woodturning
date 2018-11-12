@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:WoodturningApp"
-             x:Class="WoodturningApp.MainPage"
+             xmlns:local="clr-namespace:Woodturning"
+             xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="Woodturning.MainPage"
              BackgroundColor="LightBlue"
-             Padding="0,20,0,0" >
-
+             Padding="0,20,0,0" 
+        
+    >
+    <ContentPage.Content>
     <StackLayout>
             <!-- Logo -->
         <Label Text="Welcome to NMT Woodturning!"
@@ -14,17 +17,18 @@
                TextColor="Black"
                Margin="0,20,0,0"
                FontAttributes="Bold" />
-            <StackLayout  VerticalOptions="Center">
+        
+        <StackLayout  VerticalOptions="Center">
                 <StackLayout Orientation="Horizontal"
                              >
-                    <Image x:Name="newLogo" 
+                <ic:CircleImage
+                    x:Name="newLogo" 
                             WidthRequest="180"
-                            HeightRequest="200"
+                            HeightRequest="150"
                             HorizontalOptions="Center"
                            VerticalOptions="Center"
-                           Margin="150,0,0,0"
-                           
-                           />
+                           Margin="150,0,0,0"/>
+                
 
                     <Picker x:Name="MainPicker"                          
                             WidthRequest="100"
@@ -68,6 +72,6 @@
 
 
 
-    
+    </ContentPage.Content>
 
 </ContentPage>
