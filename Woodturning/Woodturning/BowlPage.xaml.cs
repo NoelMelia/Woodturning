@@ -9,12 +9,15 @@ using Xamarin.Forms.Xaml;
 
 namespace Woodturning
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class BowlPage : ContentPage
-	{
-		public BowlPage ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class BowlPage : TabbedPage
+    {
+        public BowlPage()
+        {
+            InitializeComponent();
+            
+            
+
+        }
+    }
 }

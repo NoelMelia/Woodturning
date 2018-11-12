@@ -1,13 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage Title="Bowl Page"
-             xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Woodturning.BowlPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    <ContentPage Title="Page 1" Icon="">
+        <Label Text="Content of Bowl Page 1" HorizontalOptions="Center" VerticalOptions="Center"/>
+    </ContentPage>
+    <ContentPage Title="Page 2" Icon="">
+        <Label Text="Content of Bowl Page 2" HorizontalOptions="Center" VerticalOptions="Center"/>
+    </ContentPage>
+</TabbedPage>
