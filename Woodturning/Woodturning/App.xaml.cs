@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Woodturning;
-using WoodturningApp;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -13,13 +6,25 @@ namespace Woodturning
 {
     public partial class App : Application
     {
-        
+        public static bool IsUserLoggedIn { get; set; }
+
         public App()
+            
         {
             InitializeComponent();
-
             MainPage = new NavigationPage(new MainPage());
+
+            /*if (!IsUserLoggedIn)
+            {
+                MainPage = new NavigationPage(new Login());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new MainPage());
+            }*/
         }
+
+        
         
         protected override void OnStart()
         {

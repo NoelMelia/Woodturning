@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Woodturning;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 
 
-namespace WoodturningApp
+namespace Woodturning
 {
-    
+
     public partial class MainPage : ContentPage
     {
         
@@ -23,6 +17,13 @@ namespace WoodturningApp
             SetupImageOnThisPage();
             pickerOfItems();
 
+        }
+
+        async void OnLogoutButtonClicked(object sender, EventArgs e)
+        {
+            App.IsUserLoggedIn = false;
+            Navigation.InsertPageBefore(new Login(), this);
+            await Navigation.PopAsync();
         }
 
         private void pickerOfItems()
