@@ -22,7 +22,7 @@ namespace Woodturning
         async void OnLogoutButtonClicked(object sender, EventArgs e)
         {
             App.IsUserLoggedIn = false;
-            Navigation.InsertPageBefore(new Login(), this);
+            Navigation.InsertPageBefore(new BowlPage(), this);
             await Navigation.PopAsync();
         }
 
@@ -65,7 +65,7 @@ namespace Woodturning
             switch (picker.SelectedIndex)
             {
                 case 0:
-                    Navigation.PushAsync(new Login());
+                    Navigation.PushAsync(new BowlPage());
                     break;
                 case 1:
                     Navigation.PushAsync(new Register());
