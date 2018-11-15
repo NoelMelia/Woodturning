@@ -44,7 +44,7 @@ namespace Woodturning
 
             newLogo.Source = ImageSource.FromResource(fileName, assembly);
 
-            //Navigation.PushAsync(new MainPage());
+            
         }
 
         async void bowl_Clicked(object sender, EventArgs e)
@@ -61,11 +61,11 @@ namespace Woodturning
         private void MainPicker_SelectedIndexChanged(object sender, EventArgs e)
         {
             var picker = (Picker)sender;
-            
+            MainPicker.MinimumHeightRequest = 20;
             switch (picker.SelectedIndex)
             {
                 case 0:
-                    Navigation.PushAsync(new BowlPage());
+                    Navigation.PushAsync(new Login());
                     break;
                 case 1:
                     Navigation.PushAsync(new Register());
@@ -89,7 +89,9 @@ namespace Woodturning
 
         }
 
-
-
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MainPage());
+        }
     }
 }

@@ -19,24 +19,33 @@
                FontAttributes="Bold" />
         
         <StackLayout  VerticalOptions="Center">
-                <StackLayout Orientation="Horizontal"
+            <StackLayout Orientation="Horizontal"
+                         
                              >
-                <ic:CircleImage
-                    x:Name="newLogo" 
-                            WidthRequest="180"
-                            HeightRequest="150"
-                            HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           Margin="150,0,0,0"/>
-                
-
-                    <Picker x:Name="MainPicker"                          
+                    <ic:CircleImage
+                        x:Name="newLogo" 
                             WidthRequest="100"
-                            HeightRequest="40"
-                            HorizontalOptions="Start"
-                            VerticalOptions="Center"
-                            Margin="50,0,0,0"
-                            SelectedIndexChanged="MainPicker_SelectedIndexChanged">
+                            HeightRequest="100"
+                            HorizontalOptions="Center"
+                            Margin="200,0,0,0">
+                            <ic:CircleImage.GestureRecognizers>
+                                <TapGestureRecognizer 
+                                    Tapped="TapGestureRecognizer_Tapped"
+                                    NumberOfTapsRequired="1">
+                                </TapGestureRecognizer>
+                            </ic:CircleImage.GestureRecognizers>
+                            
+                        
+                    </ic:CircleImage>
+
+
+                    <Picker x:Name="MainPicker" 
+                            Title="Select"
+                            WidthRequest="100"
+                            HeightRequest="100"
+                            HorizontalOptions="EndAndExpand"                            
+                            SelectedIndexChanged="MainPicker_SelectedIndexChanged"
+                            Margin="0,0,60,0">
                     </Picker>
 
 
@@ -50,7 +59,7 @@
                     VerticalOptions="Center" 
                     Text="      Bowls     "
                     FontAttributes="Italic"
-                    Margin="20,30,20,0"
+                    Margin="20,60,20,0"
                     Clicked="bowl_Clicked"
                     BorderRadius="20"/>
 
@@ -62,8 +71,10 @@
                     Clicked="biro_Clicked"
                     Margin="20,30,20,0"
                     BorderRadius="20"/>
-               
 
+                <Image>
+                    
+                </Image>
             </StackLayout>
 
     </StackLayout>
