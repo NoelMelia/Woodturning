@@ -10,9 +10,21 @@ namespace Woodturning
 	{
         public Register()
         {
+            InitializeComponent();
+            
+            backgroundImage();
             SetupImageOnThisPage();
             pickerOfItems();
-            InitializeComponent();
+        }
+
+        private void backgroundImage()
+        {
+            var assembly = typeof(Register);
+
+            string fileName = "Woodturning.Assets.Images.Objects.png";
+
+            BackImage.Source = ImageSource.FromResource(fileName, assembly);
+
         }
 
         async void OnSignUpButtonClicked(object sender, EventArgs e)

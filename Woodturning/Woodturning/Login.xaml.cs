@@ -41,7 +41,7 @@ namespace Woodturning
 
             newLogo2.Source = ImageSource.FromResource(fileName, assembly);
 
-            Navigation.PushAsync(new MainPage());
+            
         }
 
         private void MainPicker_SelectedIndexChanged(object sender, EventArgs e)

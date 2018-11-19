@@ -27,7 +27,8 @@
                             WidthRequest="100"
                             HeightRequest="100"
                             HorizontalOptions="Center"
-                            Margin="200,0,0,0">
+                            Margin="200,0,0,0"
+                            BorderThickness="5">
                             <ic:CircleImage.GestureRecognizers>
                                 <TapGestureRecognizer 
                                     Tapped="TapGestureRecognizer_Tapped"
@@ -45,7 +46,8 @@
                             HeightRequest="100"
                             HorizontalOptions="EndAndExpand"                            
                             SelectedIndexChanged="MainPicker_SelectedIndexChanged"
-                            Margin="0,0,60,0">
+                            Margin="0,0,60,0"
+                            BackgroundColor="Aquamarine">
                     </Picker>
 
 
@@ -57,24 +59,25 @@
                 <!-- Button -->
             <Button x:Name="bowl" 
                     VerticalOptions="Center" 
-                    Text="      Bowls     "
+                    Text="How to Make a Wooden Bowls"
                     FontAttributes="Italic"
                     Margin="20,60,20,0"
                     Clicked="bowl_Clicked"
-                    BorderRadius="20"/>
+                    BorderRadius="20"
+                    FontSize="Medium"
+                    />
 
             <!-- Button -->
             <Button x:Name="biro" 
                     VerticalOptions="Center" 
-                    Text="      Biros     "
+                    Text="How to Make a Wooden Biros"
                     FontAttributes="Italic"
                     Clicked="biro_Clicked"
-                    Margin="20,30,20,0"
-                    BorderRadius="20"/>
+                    Margin="20,50,20,0"
+                    BorderRadius="20"
+                    FontSize="Medium"/>
 
-                <Image>
-                    
-                </Image>
+                
             </StackLayout>
 
     </StackLayout>

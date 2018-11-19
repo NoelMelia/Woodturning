@@ -12,10 +12,12 @@
 
   <ItemGroup>
     <None Remove="Assets\Images\Newlogo.png" />
+    <None Remove="Assets\Images\Objects.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Assets\Images\Newlogo.png" />
+    <EmbeddedResource Include="Assets\Images\Objects.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +31,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="BowlPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BowlPage2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Login.xaml">
