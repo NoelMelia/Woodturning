@@ -6,7 +6,7 @@
 
     <ContentPage.Content>
 
-        <StackLayout  VerticalOptions="CenterAndExpand">
+        <StackLayout  VerticalOptions="Center">
             <StackLayout Orientation="Horizontal">
                 <ic:CircleImage
                     x:Name="newLogo2" 
@@ -14,12 +14,12 @@
                             HeightRequest="100"
                             HorizontalOptions="Center"
                             Margin="200,0,0,0">
-                            <ic:CircleImage.GestureRecognizers>
-                                <TapGestureRecognizer 
+                    <ic:CircleImage.GestureRecognizers>
+                        <TapGestureRecognizer 
                                                 Tapped="TapGestureRecognizer_Tapped"
                                                 NumberOfTapsRequired="1">
-                                </TapGestureRecognizer>
-                            </ic:CircleImage.GestureRecognizers>        
+                        </TapGestureRecognizer>
+                    </ic:CircleImage.GestureRecognizers>
                 </ic:CircleImage>
 
 
@@ -31,18 +31,21 @@
                             HorizontalOptions="EndAndExpand"                            
                             SelectedIndexChanged="MainPicker_SelectedIndexChanged"
                             Margin="0,0,40,0">
-                    
+
                 </Picker>
-
-
-
             </StackLayout>
-            <Label Text="Username" />
-            <Entry x:Name="usernameEntry" Placeholder="username" />
-            <Label Text="Password" />
-            <Entry x:Name="passwordEntry" IsPassword="true" />
-            <Button Text="Login" Clicked="OnLoginButtonClicked" />
-            <Label x:Name="messageLabel" />
+            <Label FontSize="Large" HorizontalOptions="Center" Text="Login Form" TextColor="Red"/>
+                <Frame>
+                    <StackLayout>
+                        <Entry Placeholder="Username" HorizontalOptions="Fill" x:Name="usernameEntry"/>
+                        <Entry Placeholder="Password" IsPassword="true" HorizontalOptions="Fill" x:Name="passwordEntry"/>
+                        <Button Text="Log In" Clicked="OnLoginButtonClicked" TextColor="White"  BackgroundColor="Gray" HorizontalOptions="Fill" />
+                        <Label x:Name="messageLabel" />
+                    </StackLayout>
+                </Frame>
+
+
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

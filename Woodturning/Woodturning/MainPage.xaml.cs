@@ -8,22 +8,12 @@ namespace Woodturning
 
     public partial class MainPage : ContentPage
     {
-        
-        
-
         public MainPage()
         {
             InitializeComponent();
             SetupImageOnThisPage();
             pickerOfItems();
 
-        }
-
-        async void OnLogoutButtonClicked(object sender, EventArgs e)
-        {
-            App.IsUserLoggedIn = false;
-            Navigation.InsertPageBefore(new BowlPage(), this);
-            await Navigation.PopAsync();
         }
 
         private void pickerOfItems()
@@ -42,9 +32,7 @@ namespace Woodturning
 
             string fileName = "Woodturning.Assets.Images.Newlogo.png";
 
-            newLogo.Source = ImageSource.FromResource(fileName, assembly);
-
-            
+            newLogo.Source = ImageSource.FromResource(fileName, assembly);    
         }
 
         async void bowl_Clicked(object sender, EventArgs e)
@@ -62,6 +50,7 @@ namespace Woodturning
         {
             var picker = (Picker)sender;
             MainPicker.MinimumHeightRequest = 20;
+            
             switch (picker.SelectedIndex)
             {
                 case 0:

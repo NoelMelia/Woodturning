@@ -3,18 +3,37 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
 			 x:Class="Woodturning.Register"
-			 Title="Sign Up">
+			 Title="Sign Up"
+             >
     <ContentPage.Content>
+        
         <StackLayout  VerticalOptions="Center">
-            <StackLayout Orientation="Horizontal" 
-                         
-                             >
+            <Grid>
+                <Image x:Name="BackImage" Aspect="Fill"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="400"/>
+                        <RowDefinition Height="400"/>
+                        
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="200"/>
+
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                <StackLayout   >
+                    
+                        
+            
                 <ic:CircleImage 
                         x:Name="newLogo" 
                             WidthRequest="100"
                             HeightRequest="100"
                             HorizontalOptions="Center"
-                            Margin="200,0,0,0">
+                            VerticalOptions="Center"
+                            Margin="0,0,0,0">
                     <ic:CircleImage.GestureRecognizers>
                         <TapGestureRecognizer 
                                     Tapped="TapGestureRecognizer_Tapped"
@@ -30,8 +49,9 @@
                         
                             Title="Select"
                             WidthRequest="100"
-                            HeightRequest="100"
-                            HorizontalOptions="EndAndExpand"                            
+                            HeightRequest="50"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
                             SelectedIndexChanged="MainPicker_SelectedIndexChanged"
                             Margin="0,0,60,0">
                 </Picker>
@@ -39,14 +59,17 @@
 
 
             </StackLayout>
-            <Label Text="Username" />
-            <Entry x:Name="usernameEntry" Placeholder="username" />
-            <Label Text="Password" />
-            <Entry x:Name="passwordEntry" IsPassword="true" />
-            <Label Text="Email address" />
-            <Entry x:Name="emailEntry" />
-            <Button Text="Sign Up" Clicked="OnSignUpButtonClicked" />
-            <Label x:Name="messageLabel" />
+            <Label FontSize="Large" HorizontalOptions="Center" Text="Register Form" TextColor="Red"/>
+            <Frame>
+                <StackLayout>
+                    <Entry Margin="0,200,0,0" Placeholder="Username" HorizontalOptions="Fill" x:Name="usernameEntry"/>
+                    <Entry Placeholder="Password" IsPassword="true" HorizontalOptions="Fill" x:Name="passwordEntry"/>
+                    <Entry Placeholder="Email address" x:Name="emailEntry" HorizontalOptions="Fill" />
+                    <Button Text="Sign Up" Clicked="OnSignUpButtonClicked" TextColor="White"  BackgroundColor="Gray" HorizontalOptions="Fill" />
+                    <Label x:Name="messageLabel" />
+                </StackLayout>
+            </Frame>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
