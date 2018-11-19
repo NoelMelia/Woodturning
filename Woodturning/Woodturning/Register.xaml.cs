@@ -10,8 +10,7 @@ namespace Woodturning
 	{
         public Register()
         {
-            InitializeComponent();
-            
+            InitializeComponent();            
             backgroundImage();
             SetupImageOnThisPage();
             pickerOfItems();
@@ -104,9 +103,9 @@ namespace Woodturning
         {
             var assembly = typeof(MainPage);
 
-            string fileName = "Woodturning.Assets.Images.Newlogo.png";
+            string fileName = "Woodturning.Assets.Images.Newlogo2.png";
 
-            newLogo.Source = ImageSource.FromResource(fileName, assembly);
+            newLogo2.Source = ImageSource.FromResource(fileName, assembly);
 
 
         }

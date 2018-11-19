@@ -11,6 +11,7 @@ namespace Woodturning
         public MainPage()
         {
             InitializeComponent();
+            backgroundImage();
             SetupImageOnThisPage();
             pickerOfItems();
 
@@ -25,14 +26,22 @@ namespace Woodturning
                                             "Terms",
                                             "Help"};
         }
+        private void backgroundImage()
+        {
+            var assembly = typeof(Register);
 
+            string fileName = "Woodturning.Assets.Images.Objects.png";
+
+            BackImage.Source = ImageSource.FromResource(fileName, assembly);
+
+        }
         private void SetupImageOnThisPage()
         {
             var assembly = typeof(MainPage);
 
-            string fileName = "Woodturning.Assets.Images.Newlogo.png";
+            string fileName = "Woodturning.Assets.Images.Newlogo2.png";
 
-            newLogo.Source = ImageSource.FromResource(fileName, assembly);    
+            newLogo2.Source = ImageSource.FromResource(fileName, assembly);    
         }
 
         async void bowl_Clicked(object sender, EventArgs e)
