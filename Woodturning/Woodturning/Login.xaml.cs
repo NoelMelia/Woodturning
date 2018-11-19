@@ -11,11 +11,21 @@ namespace Woodturning
         public Login()
         {
             InitializeComponent();
+            backgroundImage();
             SetupImageOnThisPage();
             pickerOfItems();
 
         }
 
+        private void backgroundImage()
+        {
+            var assembly = typeof(Register);
+
+            string fileName = "Woodturning.Assets.Images.Objects.png";
+
+            BackImage.Source = ImageSource.FromResource(fileName, assembly);
+
+        }
         async void OnLogoutButtonClicked(object sender, EventArgs e)
         {
             App.IsUserLoggedIn = false;
@@ -93,6 +103,7 @@ namespace Woodturning
             if (isValid)
             {
                 App.IsUserLoggedIn = true;
+                //await DisplayAlert("Welcome", usernameEntry, "OK");
                 Navigation.InsertPageBefore(new MainPage(), this);
                 await Navigation.PopAsync();
             }
@@ -106,10 +117,8 @@ namespace Woodturning
         bool AreCredentialsCorrect(User user)
         {
             return user.Username == Constants.Username && user.Password == Constants.Password;
+            
         }
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new MainPage());
-        }
+
     }
 }
