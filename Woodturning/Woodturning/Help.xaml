@@ -77,7 +77,23 @@
 
 
                     </StackLayout>
+                    <StackLayout Orientation="Vertical">
                     <!-- Drop Down Icon -->
+                    <Label Text="Help Details"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           Margin="30,130,30,0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           TextColor="Red"/>
+                        <Label Text=" If you're having trouble accessing a NMT Woodturning product, there's a chance we're currently experiencing a temporary problem. Please Send on a email to noelmelia1989@yahoo.co.uk. Thank you."
+                           FontAttributes="Italic"
+                           FontSize="Default"
+                           Margin="30,40,30,0"
+                               TextColor="DarkBlue"
+                           VerticalOptions="Center"
+                           />
+                    </StackLayout>
 
 
 

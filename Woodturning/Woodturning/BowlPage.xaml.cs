@@ -14,8 +14,6 @@ namespace Woodturning
 		public BowlPage ()
 		{
             InitializeComponent();
-
-        }
-  
+        }  
     }
 }
