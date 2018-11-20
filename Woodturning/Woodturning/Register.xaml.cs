@@ -103,7 +103,7 @@ namespace Woodturning
         {
             var assembly = typeof(Register);
 
-            string fileName = "Woodturning.Assets.Images.Newlogo2.png";
+            string fileName = "Woodturning.Assets.Images.Newlogo.png";
 
             newLogo.Source = ImageSource.FromResource(fileName, assembly);
 
