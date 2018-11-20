@@ -28,7 +28,7 @@
 
 
                     <ic:CircleImage 
-                        x:Name="newLogo2" 
+                        x:Name="newLogo" 
                             WidthRequest="100"
                             HeightRequest="100"
                             HorizontalOptions="Center"
@@ -48,6 +48,8 @@
                     <Picker x:Name="MainPicker"
                         
                             Title="Select"
+                            FontAttributes="Bold"
+                            TextColor="Red"
                             WidthRequest="100"
                             HeightRequest="50"
                             HorizontalOptions="End"

@@ -49,7 +49,7 @@ namespace Woodturning
 
             string fileName = "Woodturning.Assets.Images.Newlogo.png";
 
-            newLogo2.Source = ImageSource.FromResource(fileName, assembly);
+            newLogo.Source = ImageSource.FromResource(fileName, assembly);
 
             
         }
@@ -57,6 +57,7 @@ namespace Woodturning
         private void MainPicker_SelectedIndexChanged(object sender, EventArgs e)
         {
             var picker = (Picker)sender;
+            MainPicker.MinimumHeightRequest = 20;
 
             switch (picker.SelectedIndex)
             {
@@ -67,13 +68,13 @@ namespace Woodturning
                     Navigation.PushAsync(new Register());
                     break;
                 case 2:
-                    //Navigation.PushAsync(new Login());
+                    Navigation.PushAsync(new ContactUs());
                     break;
                 case 3:
-                    //Navigation.PushAsync(new Register());
+                    Navigation.PushAsync(new Terms());
                     break;
                 case 4:
-                    //Navigation.PushAsync(new Login());
+                    Navigation.PushAsync(new Help());
                     break;
 
                 default:

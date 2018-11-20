@@ -39,7 +39,7 @@ namespace Woodturning
         {
             var assembly = typeof(ContactUs);
 
-            string fileName = "Woodturning.Assets.Images.Newlogo2.png";
+            string fileName = "Woodturning.Assets.Images.Newlogo.png";
 
             newLogo2.Source = ImageSource.FromResource(fileName, assembly);
         }
@@ -69,13 +69,13 @@ namespace Woodturning
                     Navigation.PushAsync(new Register());
                     break;
                 case 2:
-                    //Navigation.PushAsync(new Login());
+                    Navigation.PushAsync(new ContactUs());
                     break;
                 case 3:
-                    //Navigation.PushAsync(new Register());
+                    Navigation.PushAsync(new Terms());
                     break;
                 case 4:
-                    //Navigation.PushAsync(new Login());
+                    Navigation.PushAsync(new Help());
                     break;
 
                 default:
@@ -86,6 +86,7 @@ namespace Woodturning
             }
 
         }
+
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
