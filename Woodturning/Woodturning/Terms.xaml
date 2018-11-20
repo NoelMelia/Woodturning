@@ -11,7 +11,7 @@
     <ContentPage.Content>
         <StackLayout>
             <!-- Logo -->
-            <Label Text="Welcome to NMT Woodturning Contact Page!"
+            <Label Text="Welcome to NMT Woodturning Terms and Conditions Page!"
                 VerticalOptions="Start" 
                 HorizontalOptions="Center" 
                TextColor="Red"
@@ -29,22 +29,17 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="400"/>
                             <RowDefinition Height="400"/>
-
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="200"/>
                             <ColumnDefinition Width="200"/>
                             <ColumnDefinition Width="200"/>
-
                         </Grid.ColumnDefinitions>
                     </Grid>
                     <StackLayout VerticalOptions="Center">
 
-
-
-
-                        <ic:CircleImage 
-                        x:Name="newLogo2" 
+                    <ic:CircleImage 
+                        x:Name="newLogo" 
                             WidthRequest="100"
                             HeightRequest="100"
                             HorizontalOptions="Center"
@@ -56,8 +51,6 @@
                                     NumberOfTapsRequired="1">
                                 </TapGestureRecognizer>
                             </ic:CircleImage.GestureRecognizers>
-
-
                         </ic:CircleImage>
 
 
@@ -78,7 +71,23 @@
 
                     </StackLayout>
                     <!-- Drop Down Icon -->
-
+                    <StackLayout Orientation="Vertical">
+                        <!-- Drop Down Icon -->
+                        <Label Text="Terms and Conditions Details"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           Margin="30,130,30,0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           TextColor="Red"/>
+                        <Label Text=" When you apply to use NMTWoodturning services, you will be asked to select a Username, Email and Password. The Username, Email and Password are the means through which you access certain services. You acknowledge and agree that it is your responsibility to safeguard the Username, Email and Password you select from any unauthorized use. IN NO EVENT WILL NMT Woodturning BE LIABLE FOR THE UNAUTHORIZED USE OR MISUSE OF YOUR Username, Email and Password. Users are responsible for maintaining accurate account information at all times, including credit card and contact information. This information can be updated in your account control panel."
+                           FontAttributes="Italic"
+                           FontSize="Default"
+                           Margin="30,40,30,0"
+                               TextColor="DarkBlue"
+                           VerticalOptions="Center"
+                           />
+                    </StackLayout>
 
 
                 </Grid>
