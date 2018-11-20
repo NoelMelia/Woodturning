@@ -44,7 +44,7 @@
 
 
                         <ic:CircleImage 
-                        x:Name="newLogo2" 
+                        x:Name="newLogo" 
                             WidthRequest="100"
                             HeightRequest="100"
                             HorizontalOptions="Center"
@@ -78,7 +78,48 @@
 
                     </StackLayout>
                     <!-- Drop Down Icon -->
-
+                    <StackLayout Orientation="Vertical">
+                        <!-- Drop Down Icon -->
+                        <Label Text="Contact Details"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           Margin="30,130,30,0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           TextColor="Red"/>
+                        <Label Text="Company Name: NMT Woodturning"
+                           FontAttributes="Italic"
+                           FontSize="Default"
+                           Margin="30,40,30,0"
+                               TextColor="DarkBlue"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           />
+                        <Label Text="Email Address: noelmelia1989@yahoo.co.uk"
+                           FontAttributes="Italic"
+                           FontSize="Default"
+                           Margin="30,10,30,0"
+                               TextColor="DarkBlue"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           />
+                        <Label Text="Phone Number: noelmelia1989@yahoo.co.uk"
+                           FontAttributes="Italic"
+                           FontSize="Default"
+                           Margin="30,10,30,0"
+                               TextColor="DarkBlue"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           />
+                        <Label Text="You can contact the company between the opening hours of 9am to 5pm, Monday to Friday"
+                           FontAttributes="Italic"
+                           FontSize="Default"
+                           Margin="30,10,30,0"
+                               TextColor="DarkBlue"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           />
+                    </StackLayout>
 
 
                 </Grid>
