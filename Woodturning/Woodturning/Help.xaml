@@ -20,8 +20,6 @@
                FontSize="Medium"
                />
 
-
-
             <StackLayout  Orientation="Vertical">
                 <Grid>
                     <Image x:Name="BackImage" Aspect="Fill"/>
@@ -39,10 +37,6 @@
                         </Grid.ColumnDefinitions>
                     </Grid>
                     <StackLayout VerticalOptions="Center">
-
-
-
-
                         <ic:CircleImage 
                         x:Name="newLogo" 
                             WidthRequest="100"
@@ -56,8 +50,6 @@
                                     NumberOfTapsRequired="1">
                                 </TapGestureRecognizer>
                             </ic:CircleImage.GestureRecognizers>
-
-
                         </ic:CircleImage>
 
 
@@ -78,8 +70,8 @@
 
                     </StackLayout>
                     <StackLayout Orientation="Vertical">
-                    <!-- Drop Down Icon -->
-                    <Label Text="Help Details"
+                        <!-- Drop Down Icon -->
+                        <Label Text="Help Details"
                            FontAttributes="Bold"
                            FontSize="Medium"
                            Margin="30,130,30,0"
@@ -94,18 +86,8 @@
                            VerticalOptions="Center"
                            />
                     </StackLayout>
-
-
-
                 </Grid>
             </StackLayout>
-
         </StackLayout>
-
-
-
-
-
     </ContentPage.Content>
-
 </ContentPage>

@@ -16,9 +16,4 @@
     <ContentPage Title="Page 2" Icon="" >
         <Label Text="Content of Biro Page 2" HorizontalOptions="Center" VerticalOptions="Center"/>
     </ContentPage>
-
-
-
-
-
 </CarouselPage>
