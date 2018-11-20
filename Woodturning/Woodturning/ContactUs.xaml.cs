@@ -6,9 +6,9 @@ using Xamarin.Forms;
 namespace Woodturning
 {
 
-    public partial class MainPage : ContentPage
+    public partial class ContactUs : ContentPage
     {
-        public MainPage()
+        public ContactUs()
         {
             InitializeComponent();
             backgroundImage();
@@ -28,7 +28,7 @@ namespace Woodturning
         }
         private void backgroundImage()
         {
-            var assembly = typeof(Register);
+            var assembly = typeof(ContactUs);
 
             string fileName = "Woodturning.Assets.Images.Objects.png";
 
@@ -37,11 +37,11 @@ namespace Woodturning
         }
         private void SetupImageOnThisPage()
         {
-            var assembly = typeof(MainPage);
+            var assembly = typeof(ContactUs);
 
             string fileName = "Woodturning.Assets.Images.Newlogo2.png";
 
-            newLogo2.Source = ImageSource.FromResource(fileName, assembly);    
+            newLogo2.Source = ImageSource.FromResource(fileName, assembly);
         }
 
         async void bowl_Clicked(object sender, EventArgs e)
@@ -59,7 +59,7 @@ namespace Woodturning
         {
             var picker = (Picker)sender;
             MainPicker.MinimumHeightRequest = 20;
-            
+
             switch (picker.SelectedIndex)
             {
                 case 0:
@@ -69,15 +69,15 @@ namespace Woodturning
                     Navigation.PushAsync(new Register());
                     break;
                 case 2:
-                    Navigation.PushAsync(new ContactUs());
+                    //Navigation.PushAsync(new Login());
                     break;
                 case 3:
-                    Navigation.PushAsync(new Terms());
+                    //Navigation.PushAsync(new Register());
                     break;
                 case 4:
-                    Navigation.PushAsync(new Help());
+                    //Navigation.PushAsync(new Login());
                     break;
-                
+
                 default:
                     break;
 

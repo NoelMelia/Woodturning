@@ -19,7 +19,7 @@ namespace Woodturning
 
         private void backgroundImage()
         {
-            var assembly = typeof(Register);
+            var assembly = typeof(Login);
 
             string fileName = "Woodturning.Assets.Images.Objects.png";
 
@@ -103,7 +103,7 @@ namespace Woodturning
             if (isValid)
             {
                 App.IsUserLoggedIn = true;
-                //await DisplayAlert("Welcome", usernameEntry, "OK");
+                await DisplayAlert("Welcome", Convert.ToString(usernameEntry), "OK");
                 Navigation.InsertPageBefore(new MainPage(), this);
                 await Navigation.PopAsync();
             }
@@ -117,8 +117,10 @@ namespace Woodturning
         bool AreCredentialsCorrect(User user)
         {
             return user.Username == Constants.Username && user.Password == Constants.Password;
-            
         }
-
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MainPage());
+        }
     }
 }
