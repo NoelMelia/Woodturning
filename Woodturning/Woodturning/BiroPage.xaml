@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Woodturning.BiroPage"
+            xmlns:local="clr-namespace:Woodturning">
+
+    <ContentPage Title="Page 1" Icon="" >
+        <Label Text="Content of Biro Page 1" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Start"
+                       FontSize="Medium"
+                       />
+
+
+    </ContentPage>
+    <ContentPage Title="Page 2" Icon="" >
+        <Label Text="Content of Biro Page 2" HorizontalOptions="Center" VerticalOptions="Center"/>
+    </ContentPage>
+</CarouselPage>

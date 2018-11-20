@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Woodturning"
+             xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="Woodturning.ContactUs"
+             BackgroundImage="Objects.png"
+             Padding="0,20,0,0" 
+        
+    >
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- Logo -->
+            <Label Text="Welcome to NMT Woodturning Contact Page!"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" 
+               TextColor="Red"
+               Margin="0,20,0,0"
+               FontAttributes="Bold"
+               FontSize="Medium"
+               />
+
+
+
+            <StackLayout  Orientation="Vertical">
+                <Grid>
+                    <Image x:Name="BackImage" Aspect="Fill"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="400"/>
+                            <RowDefinition Height="400"/>
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                    <StackLayout VerticalOptions="Center">
+
+
+
+
+                        <ic:CircleImage 
+                        x:Name="newLogo" 
+                            WidthRequest="100"
+                            HeightRequest="100"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Margin="0,10,0,0">
+                            <ic:CircleImage.GestureRecognizers>
+                                <TapGestureRecognizer 
+                                    Tapped="TapGestureRecognizer_Tapped"
+                                    NumberOfTapsRequired="1">
+                                </TapGestureRecognizer>
+                            </ic:CircleImage.GestureRecognizers>
+
+
+                        </ic:CircleImage>
+
+
+                        <Picker x:Name="MainPicker"
+                        
+                            Title="Select"
+                            FontAttributes="Bold"
+                            TextColor="Red"
+                            WidthRequest="100"
+                            HeightRequest="50"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            SelectedIndexChanged="MainPicker_SelectedIndexChanged"
+                            Margin="0,0,40,280">
+                        </Picker>
+
+
+
+                    </StackLayout>
+                    <!-- Drop Down Icon -->
+                    <StackLayout Orientation="Vertical">
+                        <!-- Drop Down Icon -->
+                        <Label Text="Contact Details"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           Margin="30,130,30,0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           TextColor="Red"/>
+                        <Label Text="Company Name: NMT Woodturning"
+                           FontAttributes="Italic"
+                           FontSize="Default"
+                           Margin="30,40,30,0"
+                               TextColor="DarkBlue"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           />
+                        <Label Text="Email Address: noelmelia1989@yahoo.co.uk"
+                           FontAttributes="Italic"
+                           FontSize="Default"
+                           Margin="30,10,30,0"
+                               TextColor="DarkBlue"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           />
+                        <Label Text="Phone Number: noelmelia1989@yahoo.co.uk"
+                           FontAttributes="Italic"
+                           FontSize="Default"
+                           Margin="30,10,30,0"
+                               TextColor="DarkBlue"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           />
+                        <Label Text="You can contact the company between the opening hours of 9am to 5pm, Monday to Friday"
+                           FontAttributes="Italic"
+                           FontSize="Default"
+                           Margin="30,10,30,0"
+                               TextColor="DarkBlue"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           />
+                    </StackLayout>
+
+
+                </Grid>
+            </StackLayout>
+
+        </StackLayout>
+
+
+
+
+
+    </ContentPage.Content>
+
+</ContentPage>
