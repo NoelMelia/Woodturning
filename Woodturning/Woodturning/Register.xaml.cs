@@ -71,13 +71,13 @@ namespace Woodturning
                     Navigation.PushAsync(new Register());
                     break;
                 case 2:
-                    //Navigation.PushAsync(new Login());
+                    Navigation.PushAsync(new ContactUs());
                     break;
                 case 3:
-                    //Navigation.PushAsync(new Register());
+                    Navigation.PushAsync(new Terms());
                     break;
                 case 4:
-                    //Navigation.PushAsync(new Login());
+                    Navigation.PushAsync(new Help());
                     break;
 
                 default:
@@ -101,7 +101,7 @@ namespace Woodturning
 
         private void SetupImageOnThisPage()
         {
-            var assembly = typeof(MainPage);
+            var assembly = typeof(Register);
 
             string fileName = "Woodturning.Assets.Images.Newlogo2.png";
 
