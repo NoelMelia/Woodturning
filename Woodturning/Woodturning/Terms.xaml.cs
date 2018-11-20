@@ -39,7 +39,7 @@ namespace Woodturning
         {
             var assembly = typeof(Terms);
 
-            string fileName = "Woodturning.Assets.Images.Newlogo2.png";
+            string fileName = "Woodturning.Assets.Images.Newlogo.png";
 
             newLogo2.Source = ImageSource.FromResource(fileName, assembly);
         }

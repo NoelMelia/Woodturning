@@ -105,7 +105,7 @@ namespace Woodturning
 
             string fileName = "Woodturning.Assets.Images.Newlogo2.png";
 
-            newLogo2.Source = ImageSource.FromResource(fileName, assembly);
+            newLogo.Source = ImageSource.FromResource(fileName, assembly);
 
 
         }

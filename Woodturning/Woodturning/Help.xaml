@@ -11,7 +11,7 @@
     <ContentPage.Content>
         <StackLayout>
             <!-- Logo -->
-            <Label Text="Welcome to NMT Woodturning Contact Page!"
+            <Label Text="Welcome to NMT Woodturning Help Page!"
                 VerticalOptions="Start" 
                 HorizontalOptions="Center" 
                TextColor="Red"
@@ -44,7 +44,7 @@
 
 
                         <ic:CircleImage 
-                        x:Name="newLogo2" 
+                        x:Name="newLogo" 
                             WidthRequest="100"
                             HeightRequest="100"
                             HorizontalOptions="Center"
