@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Xamarin.Forms;
 
 
@@ -16,14 +16,7 @@ namespace Woodturning
             pickerOfItems();
 
         }
-        async void OnLogout_Clicked(object sender, EventArgs e)
-        {
 
-            App.IsUserLoggedIn = false;
-            Navigation.InsertPageBefore(new Login(), this);
-            await Navigation.PopAsync();
-
-        }
         private void pickerOfItems()
         {
             MainPicker.ItemsSource = new string[]
@@ -48,8 +41,7 @@ namespace Woodturning
 
             string fileName = "Woodturning.Assets.Images.Newlogo.png";
 
-            newLogo.Source = ImageSource.FromResource(fileName, assembly);
-            
+            newLogo.Source = ImageSource.FromResource(fileName, assembly);    
         }
 
         async void bowl_Clicked(object sender, EventArgs e)
