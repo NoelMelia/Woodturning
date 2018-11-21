@@ -7,25 +7,21 @@ namespace Woodturning
     public partial class App : Application
     {
         public static bool IsUserLoggedIn { get; set; }
-
         public App()
-            
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new MainPage());
-
-            /*if (!IsUserLoggedIn)
+            if (!IsUserLoggedIn)
             {
                 MainPage = new NavigationPage(new Login());
             }
             else
             {
                 MainPage = new NavigationPage(new MainPage());
-            }*/
+            }
         }
 
-        
-        
+
+
         protected override void OnStart()
         {
             // Handle when your app starts

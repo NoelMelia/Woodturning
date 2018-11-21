@@ -18,7 +18,7 @@ namespace Woodturning
 
         private void backgroundImage()
         {
-            var assembly = typeof(Register);
+            var assembly = typeof(Register);            
 
             string fileName = "Woodturning.Assets.Images.Objects.png";
 
@@ -112,6 +112,11 @@ namespace Woodturning
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MainPage());
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Login());
         }
     }
 }

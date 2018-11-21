@@ -1,49 +1,35 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
     
 <ContentPage 
-    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Woodturning.Login" Title="Login"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Woodturning.Login" Title="Login"
     xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
 
     <ContentPage.Content>
-
-        <StackLayout  Orientation="Vertical">
+       
+            <StackLayout  Orientation="Vertical">
             <Grid>
-                <Image x:Name="BackImage" Aspect="Fill"/>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="400"/>
-                        <RowDefinition Height="400"/>
-
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="200"/>
-                        <ColumnDefinition Width="200"/>
-                        <ColumnDefinition Width="200"/>
-
-                    </Grid.ColumnDefinitions>
-                </Grid>
+            <Image x:Name="BackImage" Aspect="Fill"/>
                 <StackLayout VerticalOptions="Center">
 
-
-
-
                     <ic:CircleImage 
-                        x:Name="newLogo" 
-                            WidthRequest="100"
-                            HeightRequest="100"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            Margin="0,40,0,0">
+                            x:Name="newLogo" 
+                                WidthRequest="100"
+                                HeightRequest="100"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                Margin="0,10,0,10"
+                                Aspect="AspectFit">
                         <ic:CircleImage.GestureRecognizers>
                             <TapGestureRecognizer 
-                                    Tapped="TapGestureRecognizer_Tapped"
-                                    NumberOfTapsRequired="1">
+                                        Tapped="TapGestureRecognizer_Tapped"
+                                        NumberOfTapsRequired="1">
                             </TapGestureRecognizer>
                         </ic:CircleImage.GestureRecognizers>
 
 
                     </ic:CircleImage>
-
 
                     <Picker x:Name="MainPicker"
                         
@@ -55,24 +41,27 @@
                             HorizontalOptions="End"
                             VerticalOptions="Center"
                             SelectedIndexChanged="MainPicker_SelectedIndexChanged"
-                            Margin="0,0,40,280">
+                            Margin="0,0,40,20">
                     </Picker>
-
-
-
-                </StackLayout>
-                <Label FontSize="Large" HorizontalOptions="Center" Text="Login Form" TextColor="Red"/>
+                
+                <Label FontSize="Large" 
+                       HorizontalOptions="Center" 
+                       Text="Login Form" 
+                       TextColor="Red"
+                       Margin="0,20,0,0"/>
                 <Frame>
                     <StackLayout>
-                        <Entry Margin="0,200,0,0" Placeholder="Username" HorizontalOptions="Fill" x:Name="usernameEntry"/>
+                        <Entry Margin="0,0,0,0" Placeholder="Username" HorizontalOptions="Fill" x:Name="usernameEntry"/>
                         <Entry Placeholder="Password" IsPassword="true" HorizontalOptions="Fill" x:Name="passwordEntry"/>
                         <Button Text="Log In" Clicked="OnLoginButtonClicked" TextColor="White"  BackgroundColor="Gray" HorizontalOptions="Fill" />
+                        <Button Text="Sign Up" Clicked="OnSignUpButtonClicked"  TextColor="White"  BackgroundColor="Gray" HorizontalOptions="Fill" />
                         <Label x:Name="messageLabel" />
                     </StackLayout>
                 </Frame>
-
-
-            </Grid>
-        </StackLayout>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+            
+        
     </ContentPage.Content>
 </ContentPage>
