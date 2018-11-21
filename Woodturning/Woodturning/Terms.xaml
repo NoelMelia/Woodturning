@@ -6,36 +6,15 @@
              x:Class="Woodturning.Terms"
              BackgroundImage="Objects.png"
              Padding="0,20,0,0" 
-        
+             Title="Terms and Conditions"
     >
     <ContentPage.Content>
-        <StackLayout>
-            <!-- Logo -->
-            <Label Text="Welcome to NMT Woodturning Terms and Conditions Page!"
-                VerticalOptions="Start" 
-                HorizontalOptions="Center" 
-               TextColor="Red"
-               Margin="0,20,0,0"
-               FontAttributes="Bold"
-               FontSize="Medium"
-               />
-
-
+        
 
             <StackLayout  Orientation="Vertical">
                 <Grid>
                     <Image x:Name="BackImage" Aspect="Fill"/>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="400"/>
-                            <RowDefinition Height="400"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="200"/>
-                            <ColumnDefinition Width="200"/>
-                            <ColumnDefinition Width="200"/>
-                        </Grid.ColumnDefinitions>
-                    </Grid>
+
                     <StackLayout VerticalOptions="Center">
 
                     <ic:CircleImage 
@@ -93,7 +72,7 @@
                 </Grid>
             </StackLayout>
 
-        </StackLayout>
+        
 
 
 
