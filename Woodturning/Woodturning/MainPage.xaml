@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Woodturning"
+             xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="Woodturning.MainPage"
+             BackgroundImage="Objects.png"
+             Padding="0,20,0,0" 
+        
+    >
+    <ContentPage.Content>
+    <StackLayout>
+            <!-- Logo -->
+        <Label Text="Welcome to NMT Woodturning!"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" 
+               TextColor="Red"
+               Margin="0,20,0,0"
+               FontAttributes="Bold"
+               FontSize="Medium"
+               />
+
+
+
+            <StackLayout  Orientation="Vertical">
+                <Grid>
+                    <Image x:Name="BackImage" Aspect="Fill"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="400"/>
+                            <RowDefinition Height="400"/>
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                    <StackLayout VerticalOptions="Center">
+
+
+
+
+                        <ic:CircleImage 
+                        x:Name="newLogo" 
+                            WidthRequest="100"
+                            HeightRequest="100"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Margin="0,10,0,0">
+                            <ic:CircleImage.GestureRecognizers>
+                                <TapGestureRecognizer 
+                                    Tapped="TapGestureRecognizer_Tapped"
+                                    NumberOfTapsRequired="1">
+                                </TapGestureRecognizer>
+                            </ic:CircleImage.GestureRecognizers>
+
+
+                        </ic:CircleImage>
+
+
+                        <Picker x:Name="MainPicker"
+                        
+                            Title="Select"
+                            FontAttributes="Bold"
+                            TextColor="Red"
+                            WidthRequest="100"
+                            HeightRequest="50"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            SelectedIndexChanged="MainPicker_SelectedIndexChanged"
+                            Margin="0,0,40,280">
+                        </Picker>
+
+
+
+                    </StackLayout>
+                    <!-- Drop Down Icon -->
+
+                    <StackLayout VerticalOptions="Center">
+                <!-- Button -->
+            <Button x:Name="bowl" 
+                    VerticalOptions="Center" 
+                    Text="How to Make a Wooden Bowls"
+                    FontAttributes="Italic"
+                    Margin="20,90,20,0"
+                    Clicked="bowl_Clicked"
+                    BorderRadius="20"
+                    FontSize="Medium"
+                    TextColor="OrangeRed"
+                    BackgroundColor="Brown"
+                    />
+
+            <!-- Button -->
+            <Button x:Name="biro" 
+                    VerticalOptions="Center" 
+                    Text="How to Make a Wooden Biros"
+                    FontAttributes="Italic"
+                    Clicked="biro_Clicked"
+                    Margin="20,50,20,0"
+                    BorderRadius="20"
+                    FontSize="Medium"
+                    TextColor="OrangeRed"
+                    BackgroundColor="Brown"/>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+
+    </StackLayout>
+
+
+
+
+
+    </ContentPage.Content>
+
+</ContentPage>

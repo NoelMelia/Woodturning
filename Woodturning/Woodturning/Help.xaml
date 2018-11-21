@@ -22,20 +22,6 @@
 
             <StackLayout  Orientation="Vertical">
                 <Grid>
-                    <Image x:Name="BackImage" Aspect="Fill"/>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="400"/>
-                            <RowDefinition Height="400"/>
-
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="200"/>
-                            <ColumnDefinition Width="200"/>
-                            <ColumnDefinition Width="200"/>
-
-                        </Grid.ColumnDefinitions>
-                    </Grid>
                     <StackLayout VerticalOptions="Center">
                         <ic:CircleImage 
                         x:Name="newLogo" 
@@ -82,7 +68,7 @@
                            FontAttributes="Italic"
                            FontSize="Default"
                            Margin="30,40,30,0"
-                               TextColor="DarkBlue"
+                               TextColor="White"
                            VerticalOptions="Center"
                            />
                     </StackLayout>
