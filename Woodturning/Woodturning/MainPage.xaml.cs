@@ -46,12 +46,12 @@ namespace Woodturning
 
         async void bowl_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new BowlPage());
+            await Navigation.PushAsync(new BowlPageMain());
         }
 
         async void biro_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new BiroPage());
+            await Navigation.PushAsync(new BiroPageMain());
         }
 
 

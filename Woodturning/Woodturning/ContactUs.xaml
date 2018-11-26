@@ -6,7 +6,7 @@
              x:Class="Woodturning.ContactUs"
              BackgroundImage="Objects.png"
              Padding="0,20,0,0" 
-        Title="Help Page"
+        Title="Contact Us Page"
     >
     <ContentPage.Content>
 
@@ -53,18 +53,25 @@
                     <!-- Drop Down Icon -->
                     <StackLayout Orientation="Vertical">
                         <!-- Drop Down Icon -->
-                        <Label Text="Contact Details"
+                    <Label Text="Contact Us"
                            FontAttributes="Bold"
                            FontSize="Medium"
-                           Margin="30,130,30,0"
+                           Margin="30,20,30,0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           TextColor="Red"/>
+                    <Label Text="Contact Details"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           Margin="30,180,30,0"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            TextColor="Red"/>
                         <Label Text="Company Name: NMT Woodturning"
                            FontAttributes="Italic"
                            FontSize="Default"
-                           Margin="30,40,30,0"
-                               TextColor="DarkBlue"
+                           Margin="30,20,30,0"
+                               TextColor="White"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            />
@@ -72,7 +79,7 @@
                            FontAttributes="Italic"
                            FontSize="Default"
                            Margin="30,10,30,0"
-                               TextColor="DarkBlue"
+                               TextColor="White"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            />
@@ -80,7 +87,7 @@
                            FontAttributes="Italic"
                            FontSize="Default"
                            Margin="30,10,30,0"
-                               TextColor="DarkBlue"
+                               TextColor="White"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            />
@@ -88,7 +95,7 @@
                            FontAttributes="Italic"
                            FontSize="Default"
                            Margin="30,10,30,0"
-                               TextColor="DarkBlue"
+                               TextColor="White"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            />

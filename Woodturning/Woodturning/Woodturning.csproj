@@ -11,11 +11,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\Bowl\step1.PNG" />
+    <None Remove="Assets\Images\Bowl\step2p1.png" />
+    <None Remove="Assets\Images\Bowl\step2p2.PNG" />
+    <None Remove="Assets\Images\Bowl\step2p3.PNG" />
+    <None Remove="Assets\Images\Bowl\step3.PNG" />
+    <None Remove="Assets\Images\Bowl\step4.PNG" />
+    <None Remove="Assets\Images\Bowl\step5.PNG" />
     <None Remove="Assets\Images\Newlogo.png" />
     <None Remove="Assets\Images\Objects.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Bowl\step1.PNG" />
+    <EmbeddedResource Include="Assets\Images\Bowl\step2p1.png" />
+    <EmbeddedResource Include="Assets\Images\Bowl\step2p2.PNG" />
+    <EmbeddedResource Include="Assets\Images\Bowl\step2p3.PNG" />
+    <EmbeddedResource Include="Assets\Images\Bowl\step3.PNG" />
+    <EmbeddedResource Include="Assets\Images\Bowl\step4.PNG" />
+    <EmbeddedResource Include="Assets\Images\Bowl\step5.PNG" />
     <EmbeddedResource Include="Assets\Images\Newlogo.png" />
     <EmbeddedResource Include="Assets\Images\Objects.png" />
   </ItemGroup>
@@ -27,13 +41,46 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="BiroPage.xaml">
+    <Compile Update="BiroPageMain.xaml.cs">
+      <DependentUpon>BiroPageMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="BowlPageMain.xaml.cs">
+      <DependentUpon>BowlPageMain.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="BiroPage1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="BowlPage.xaml">
+    <EmbeddedResource Update="BiroPageMain.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BowlPage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BowlPage4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BowlPage5.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BowlPage6.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BowlPage7.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BowlPage8.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BowlPageMain.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="BowlPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BowlPage3.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ContactUs.xaml">
@@ -51,5 +98,9 @@
     <EmbeddedResource Update="Terms.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\Images\Biro\" />
   </ItemGroup>
 </Project>

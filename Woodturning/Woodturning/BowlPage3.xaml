@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Woodturning.BowlPage3">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Welcome to Step 3 of Woodturning a Bowl"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="Red"/>
+                <Image x:Name="Test" Aspect="AspectFit"/>
+                <Label Text="&#x2022;Draw a line at the center of the ball."/>
+                <Label Text="&#x2022;Then remove ball from the lathe and cut the tenons off."/>
+                <Label Text="&#x2022;Now mount the ball between centers using the line as your center marks."/>
+                <Label Text="&#x2022;Now the pith runs perpendicular to the bed."/>
+                <Label Text="&#x2022;Rotate the ball by hand and check to see that it's centered."/>
+                <Label Text="&#x2022;If not readjust it slightly."/>
+                <Label Text="&#x2022;Your ball probably won't be round at this point."/>
+                <Label Text="&#x2022;You can see a shadow as it rotates."/>
+                <Label Text="&#x2022;Step 3 will continue in making of bowl"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

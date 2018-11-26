@@ -1,13 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Woodturning.BowlPage2">
-    
-            <ContentPage Title="Page 1" Icon="" >
-                <Label Text="Content of Bowl Page 1" 
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
 
-            </ContentPage>
-        
-</TabbedPage>
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Label Text="Welcome to Step 2 of Woodturning a Bowl"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="Red"/>
+            <Image x:Name="Test" Aspect="AspectFit"/>
+                <Label Text="&#x2022; Now begin turning a ball shape into a curved shape."/>
+                <Image x:Name="Test2" Aspect="AspectFit"/>
+                <Label Text="&#x2022;As you can see above"/>
+                <Label Text="&#x2022;It helps to cut out a pattern from a piece of cardboard."/>
+                <Image x:Name="Test3" Aspect="AspectFit"/>
+                <Label Text="&#x2022;Use a parting tool to cut the tenons smaller outside the ball."/>
+                <Label Text="&#x2022;Step 3 will continue in making of bowl"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -5,15 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Woodturning;
 
 namespace Woodturning
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class BowlPage : CarouselPage
+	public partial class BowlPageMain : TabbedPage
 	{
-		public BowlPage ()
+		public BowlPageMain ()
 		{
             InitializeComponent();
-        }  
+            
+        }
     }
 }

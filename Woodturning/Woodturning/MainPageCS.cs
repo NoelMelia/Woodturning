@@ -30,7 +30,7 @@ namespace Woodturning
         async void OnLogoutButtonClicked(object sender, EventArgs e)
         {
             App.IsUserLoggedIn = false;
-            Navigation.InsertPageBefore(new BowlPage(), this);
+            Navigation.InsertPageBefore(new BowlPageMain(), this);
             await Navigation.PopAsync();
         }
     }

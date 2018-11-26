@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Woodturning.BiroPageMain"
+            xmlns:local="clr-namespace:Woodturning"
+            xmlns:BiroPageMain="clr-namespace:Woodturning"
+            Title="Instructions on how to make a Wooden Biro"
+            >
+
+
+    <BiroPageMain:BiroPage1 Title="Step 1" />
+    <BiroPageMain:BiroPage1 Title="Step 2"/>
+    <BiroPageMain:BiroPage1 Title="Step 3"/>
+    <BiroPageMain:BiroPage1 Title="Step 4"/>
+    <BiroPageMain:BiroPage1 Title="Step 5"/>
+    <BiroPageMain:BiroPage1 Title="Step 6"/>
+    <BiroPageMain:BiroPage1 Title="Step 7"/>
+    <BiroPageMain:BiroPage1 Title="Step 8"/>
+
+
+
+</TabbedPage>
