@@ -3,10 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Woodturning.BowlPage6">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Welcome to Step 6 of Woodturning a Bowl"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="Red"/>
+                <Image x:Name="Test" Aspect="AspectFit"/>
+                <Label Text="&#x2022;Turn the inside of the bowl."/>
+                <Label Text="&#x2022;You may need to true up the outside as well."/>
+                <Label Text="&#x2022;Sand the bowl inside and out."/>
+                <Label Text="&#x2022;Use a parting tool to cut the bottom of the bowl."/>
+                <Label Text="&#x2022;Now turn an opening in the waste block the size of the bowl."/>
+                <Label Text="&#x2022;Insert the bowl into this opening and bring the tailstock up to hold it."/>
+                <Label Text="&#x2022;If it doesn't fit snuggly use paper towels to make if fit more firmly"/>
+                <Image x:Name="Test2" Aspect="AspectFit"/>
+                <Label Text="&#x2022;Now turn the bottom of the bowl leaving a small tenon."/>
+                <Label Text="&#x2022;You many want to resize the foot and true up the bottom of the bowl at this time also."/>
+                <Label Text="&#x2022;Step 7 will continue in making of bowl"/>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

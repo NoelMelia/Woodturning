@@ -15,6 +15,15 @@ namespace Woodturning
 		public BowlPage4 ()
 		{
 			InitializeComponent ();
-		}
-	}
+            SetupImageOnThisPage3();
+        }
+        private void SetupImageOnThisPage3()
+        {
+            var assembly = typeof(BowlPage4);
+
+            string fileName = "Woodturning.Assets.Images.Bowl.step4.PNG";
+
+            Test.Source = ImageSource.FromResource(fileName, assembly);
+        }
+    }
 }

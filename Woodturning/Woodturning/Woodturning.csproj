@@ -18,6 +18,12 @@
     <None Remove="Assets\Images\Bowl\step3.PNG" />
     <None Remove="Assets\Images\Bowl\step4.PNG" />
     <None Remove="Assets\Images\Bowl\step5.PNG" />
+    <None Remove="Assets\Images\Bowl\step5p1.PNG" />
+    <None Remove="Assets\Images\Bowl\step6pt1.PNG" />
+    <None Remove="Assets\Images\Bowl\step6pt2.PNG" />
+    <None Remove="Assets\Images\Bowl\step7.PNG" />
+    <None Remove="Assets\Images\Bowl\step7pt1.PNG" />
+    <None Remove="Assets\Images\Bowl\step8.PNG" />
     <None Remove="Assets\Images\Newlogo.png" />
     <None Remove="Assets\Images\Objects.png" />
   </ItemGroup>
@@ -30,6 +36,12 @@
     <EmbeddedResource Include="Assets\Images\Bowl\step3.PNG" />
     <EmbeddedResource Include="Assets\Images\Bowl\step4.PNG" />
     <EmbeddedResource Include="Assets\Images\Bowl\step5.PNG" />
+    <EmbeddedResource Include="Assets\Images\Bowl\step5p1.PNG" />
+    <EmbeddedResource Include="Assets\Images\Bowl\step6pt1.PNG" />
+    <EmbeddedResource Include="Assets\Images\Bowl\step6pt2.PNG" />
+    <EmbeddedResource Include="Assets\Images\Bowl\step7.PNG" />
+    <EmbeddedResource Include="Assets\Images\Bowl\step7pt1.PNG" />
+    <EmbeddedResource Include="Assets\Images\Bowl\step8.PNG" />
     <EmbeddedResource Include="Assets\Images\Newlogo.png" />
     <EmbeddedResource Include="Assets\Images\Objects.png" />
   </ItemGroup>

@@ -3,10 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Woodturning.BowlPage7">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Welcome to Step 7 of Woodturning a Bowl"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="Red"/>
+                <Image x:Name="Test" Aspect="AspectFit"/>
+                <Label Text="&#x2022;You can now carve this little tenon off."/>
+                <Label Text="&#x2022;I use my spindle gouge to remove the little tenon."/>
+                <Label Text="&#x2022;I push forward very gently while keeping pressure on the bevel to hold the bowl in place."/>
+                <Label Text="&#x2022;This allows me to cut allof the tenon off with the spindle gouge instead of carving it off."/>
+                <Label Text="&#x2022;Sand this area."/>
+                <Image x:Name="Test2" Aspect="AspectFit"/>
+                <Label Text="&#x2022;You now have 2 side grain bowls that are the same diameter as the original log."/>
+                <Label Text="&#x2022;Step 8 will continue in making of bowl and the final image will show this."/>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
