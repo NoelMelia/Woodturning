@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Woodturning.BowlPage1">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Welcome to Step 1 of Woodturning a Bowl"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="Red"/>
+                <Image x:Name="Test" Aspect="AspectFit"/>
+                <Label Text="&#x2022;1. When you first start turning one of the biggest problems is finding wood to turn. "/>
+                <Label Text="&#x2022;2. Try to make the timber blank s Then you can Mount a log between centers."/>
+                <Label Text="&#x2022;3. Turn the log into a cylinder removing the bark and cambium layer."/>
+                <Label Text="&#x2022;4. Measure the diameter and put 2 lines this distance apart on the cylinder."/>
+                <Label Text="&#x2022;5. To be Continued on Step 2."/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

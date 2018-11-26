@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Woodturning.BowlPageMain"
+            xmlns:BowlPageMain="clr-namespace:Woodturning"
+            xmlns:local="clr-namespace:Woodturning"
+            Title="Instructions on how to make a Wooden Bowl"
+            >
+
+
+    <BowlPageMain:BowlPage1 Title="Step 1" />
+    <BowlPageMain:BowlPage2 Title="Step 2"/>
+    <BowlPageMain:BowlPage3 Title="Step 3"/>
+    <BowlPageMain:BowlPage2 Title="Step 4"/>
+    <BowlPageMain:BowlPage2 Title="Step 5"/>
+    <BowlPageMain:BowlPage2 Title="Step 6"/>
+    <BowlPageMain:BowlPage2 Title="Step 7"/>
+    <BowlPageMain:BowlPage2 Title="Step 8"/>
+
+
+
+</TabbedPage>
+
+

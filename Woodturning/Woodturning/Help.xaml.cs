@@ -44,15 +44,6 @@ namespace Woodturning
             newLogo.Source = ImageSource.FromResource(fileName, assembly);
         }
 
-        async void bowl_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new BowlPage());
-        }
-
-        async void biro_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new BiroPage());
-        }
 
 
         private void MainPicker_SelectedIndexChanged(object sender, EventArgs e)

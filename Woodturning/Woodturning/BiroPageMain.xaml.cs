@@ -9,9 +9,9 @@ using Xamarin.Forms.Xaml;
 namespace Woodturning
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BiroPage : CarouselPage
+    public partial class BiroPageMain : TabbedPage
     {
-        public BiroPage()
+        public BiroPageMain()
         {
             InitializeComponent();
 
