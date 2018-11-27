@@ -9,9 +9,9 @@
         
     >
     <ContentPage.Content>
-    <StackLayout>
+        <StackLayout>
             <!-- Logo -->
-        <Label Text="Welcome to NMT Woodturning!"
+            <Label Text="NMT Woodturning!"
                 VerticalOptions="Start" 
                 HorizontalOptions="Center" 
                TextColor="Red"
@@ -25,43 +25,23 @@
             <StackLayout  Orientation="Vertical">
                 <Grid>
                     <Image x:Name="BackImage" Aspect="Fill"/>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="400"/>
-                            <RowDefinition Height="400"/>
-
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="200"/>
-                            <ColumnDefinition Width="200"/>
-                            <ColumnDefinition Width="200"/>
-
-                        </Grid.ColumnDefinitions>
-                    </Grid>
-                    
-
-
-
-
-                        <ic:CircleImage 
+                    <ic:CircleImage 
                         x:Name="newLogo" 
                             WidthRequest="100"
                             HeightRequest="100"
                             HorizontalOptions="Center"
                             VerticalOptions="Start"
                             Margin="0,10,0,0">
-                            <ic:CircleImage.GestureRecognizers>
-                                <TapGestureRecognizer 
+                        <ic:CircleImage.GestureRecognizers>
+                            <TapGestureRecognizer 
                                     Tapped="TapGestureRecognizer_Tapped"
                                     NumberOfTapsRequired="1">
-                                </TapGestureRecognizer>
-                            </ic:CircleImage.GestureRecognizers>
+                            </TapGestureRecognizer>
+                        </ic:CircleImage.GestureRecognizers>
 
 
-                        </ic:CircleImage>
-
-
-                        <Picker x:Name="MainPicker"
+                    </ic:CircleImage>
+                    <Picker x:Name="MainPicker"
                         
                             Title="Select"
                             FontAttributes="Bold"
@@ -72,16 +52,12 @@
                             VerticalOptions="Center"
                             SelectedIndexChanged="MainPicker_SelectedIndexChanged"
                             Margin="0,0,40,280">
-                        </Picker>
-
-
-
-                    
+                    </Picker>
                     <!-- Drop Down Icon -->
 
                     <StackLayout VerticalOptions="Center">
-                <!-- Button -->
-            <Button x:Name="bowl" 
+                        <!-- Button -->
+                        <Button x:Name="bowl" 
                     VerticalOptions="Center" 
                     Text="How to Make a Wooden Bowls"
                     FontAttributes="Italic"
@@ -93,8 +69,8 @@
                     BackgroundColor="Brown"
                     />
 
-            <!-- Button -->
-            <Button x:Name="biro" 
+                        <!-- Button -->
+                        <Button x:Name="biro" 
                     VerticalOptions="Center" 
                     Text="How to Make a Wooden Biros"
                     FontAttributes="Italic"
@@ -108,12 +84,6 @@
                 </Grid>
             </StackLayout>
 
-    </StackLayout>
-
-
-
-
-
+        </StackLayout>
     </ContentPage.Content>
-
 </ContentPage>

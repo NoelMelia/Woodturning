@@ -5,12 +5,12 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label Text="Welcome to Step 8 of Woodturning a Biro"
+                <Label Text="Welcome to Step 11 of Woodturning a Biro"
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand"
                    TextColor="Red"/>
+                <Label FontAttributes="Bold" FontSize="Large" TextColor="OrangeRed" Text="YOU HAVE A HAND MADE A PEN!!!!!!!!!!!!!!!!!!!!!!!!  "/>
                 <Image x:Name="Test" Aspect="AspectFit"/>
-                <Label Text="&#x2022;YOU HAVE A HAND MADE PEN!!!!!!!!!!!!!!!!!!!!!!!!  "/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -15,14 +15,14 @@
             <StackLayout  Orientation="Vertical">
                 <Grid>
                     <Image x:Name="BackImage" Aspect="Fill"/>
-                    <StackLayout VerticalOptions="Center">
+                    
                         <ic:CircleImage 
                         x:Name="newLogo" 
                             WidthRequest="100"
                             HeightRequest="100"
                             HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            Margin="0,10,0,0">
+                            VerticalOptions="Start"
+                            Margin="0,60,0,0">
                             <ic:CircleImage.GestureRecognizers>
                                 <TapGestureRecognizer 
                                     Tapped="TapGestureRecognizer_Tapped"
@@ -47,7 +47,7 @@
 
 
 
-                    </StackLayout>
+                   
                     <StackLayout Orientation="Vertical">
                         <!-- Drop Down Icon -->
                         <Label Text="Help Details"

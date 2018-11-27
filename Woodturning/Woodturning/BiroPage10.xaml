@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label Text="Welcome to Step 8 of Woodturning a Biro"
+                <Label Text="Welcome to Step 10 of Woodturning a Biro"
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand"
                    TextColor="Red"/>
