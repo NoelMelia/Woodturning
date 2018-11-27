@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Woodturning.BiroPage3">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Welcome to Step 3 of Woodturning a Biro"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="Red"/>
+                <Image x:Name="Test" Aspect="AspectFit"/>
+                <Label Text="&#x2022;This step can either be done on a drill press, Lathe or hand drill."/>
+                <Label Text="&#x2022;I would not recommend drilling this hole on a normal drill because the hole has to be perfectly square."/>
+                <Label Text="&#x2022;The drilling on a drill press is self explanitory."/>
+                <Label Text="&#x2022;But drilling on a lathe? Yes it can be done with a supernova chuck and a drill attachment."/>
+                <Image x:Name="Test2" Aspect="AspectFit"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

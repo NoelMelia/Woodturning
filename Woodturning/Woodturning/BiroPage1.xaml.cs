@@ -15,6 +15,15 @@ namespace Woodturning
 		public BiroPage1 ()
 		{
 			InitializeComponent ();
-		}
-	}
+            SetupImageOnThisPage();
+        }
+        private void SetupImageOnThisPage()
+        {
+            var assembly = typeof(BiroPage1);
+
+            string fileName = "Woodturning.Assets.Images.Biro.main.png";
+
+            Test.Source = ImageSource.FromResource(fileName, assembly);
+        }
+    }
 }

@@ -18,7 +18,7 @@
                 <Label Text="&#x2022;If not readjust it slightly."/>
                 <Label Text="&#x2022;Your ball probably won't be round at this point."/>
                 <Label Text="&#x2022;You can see a shadow as it rotates."/>
-                <Label Text="&#x2022;Step 3 will continue in making of bowl"/>
+                <Label Text="&#x2022;Step 4 will continue in making of bowl"/>
 
             </StackLayout>
         </ScrollView>

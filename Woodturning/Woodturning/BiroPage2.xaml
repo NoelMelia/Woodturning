@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Woodturning.BiroPage2">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Welcome to Step 2 of Woodturning a Biro"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="Red"/>
+                <Image x:Name="Test" Aspect="AspectFit"/>
+                <Label Text="&#x2022;You will need a piece of wood called a blank."/>
+                <Label Text="&#x2022;This can be any type of wood as long as the wood is long enough for the tubes to fit in the piece of wood."/>
+                <Label Text="&#x2022;Then you need to cut the wood so that the wood will be long enough for tubes, Before you start cutting or even think about cutting put on your saftey glasses."/>
+                <Label Text="&#x2022;I use a Craftsman table saw to cut the wood but a bandsaw or a scroll saw would do the job well."/>
+                <Label Text="&#x2022; Make sure to measure twice and cut once."/>
+                <Image x:Name="Test2" Aspect="AspectFit"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
