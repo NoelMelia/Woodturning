@@ -9,14 +9,15 @@
 
 
     <BiroPageMain:BiroPage1 Title="Step 1" />
-    <BiroPageMain:BiroPage1 Title="Step 2"/>
-    <BiroPageMain:BiroPage1 Title="Step 3"/>
-    <BiroPageMain:BiroPage1 Title="Step 4"/>
-    <BiroPageMain:BiroPage1 Title="Step 5"/>
-    <BiroPageMain:BiroPage1 Title="Step 6"/>
-    <BiroPageMain:BiroPage1 Title="Step 7"/>
-    <BiroPageMain:BiroPage1 Title="Step 8"/>
-
-
+    <BiroPageMain:BiroPage2 Title="Step 2"/>
+    <BiroPageMain:BiroPage3 Title="Step 3"/>
+    <BiroPageMain:BiroPage4 Title="Step 4"/>
+    <BiroPageMain:BiroPage5 Title="Step 5"/>
+    <BiroPageMain:BiroPage6 Title="Step 6"/>
+    <BiroPageMain:BiroPage7 Title="Step 7"/>
+    <BiroPageMain:BiroPage8 Title="Step 8"/>
+    <BiroPageMain:BiroPage9 Title="Step 9"/>
+    <BiroPageMain:BiroPage10 Title="Step 10"/>
+    <BiroPageMain:BiroPage11 Title="Step 11"/>
 
 </TabbedPage>

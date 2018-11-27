@@ -11,6 +11,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\Biro\main.png" />
+    <None Remove="Assets\Images\Biro\part10.png" />
+    <None Remove="Assets\Images\Biro\part10p1.png" />
+    <None Remove="Assets\Images\Biro\part11.png" />
+    <None Remove="Assets\Images\Biro\part3p1.png" />
+    <None Remove="Assets\Images\Biro\part3p2.png" />
+    <None Remove="Assets\Images\Biro\part4p1.png" />
+    <None Remove="Assets\Images\Biro\part4p2.png" />
+    <None Remove="Assets\Images\Biro\part4p3.png" />
+    <None Remove="Assets\Images\Biro\part4p4.png" />
+    <None Remove="Assets\Images\Biro\part5p1.png" />
+    <None Remove="Assets\Images\Biro\part5p2.png" />
+    <None Remove="Assets\Images\Biro\part6p1.png" />
+    <None Remove="Assets\Images\Biro\part6p2.png" />
+    <None Remove="Assets\Images\Biro\part7p1.png" />
+    <None Remove="Assets\Images\Biro\part7p2.png" />
+    <None Remove="Assets\Images\Biro\part8.png" />
+    <None Remove="Assets\Images\Biro\part8p1.png" />
+    <None Remove="Assets\Images\Biro\part9p2.png" />
+    <None Remove="Assets\Images\Biro\step2p1.png" />
+    <None Remove="Assets\Images\Biro\step2p2.png" />
     <None Remove="Assets\Images\Bowl\step1.PNG" />
     <None Remove="Assets\Images\Bowl\step2p1.png" />
     <None Remove="Assets\Images\Bowl\step2p2.PNG" />
@@ -29,6 +50,27 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Biro\main.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part10.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part10p1.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part11.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part3p1.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part3p2.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part4p1.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part4p2.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part4p3.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part4p4.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part5p1.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part5p2.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part6p1.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part6p2.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part7p1.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part7p2.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part8.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part8p1.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\part9p2.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\step2p1.png" />
+    <EmbeddedResource Include="Assets\Images\Biro\step2p2.png" />
     <EmbeddedResource Include="Assets\Images\Bowl\step1.PNG" />
     <EmbeddedResource Include="Assets\Images\Bowl\step2p1.png" />
     <EmbeddedResource Include="Assets\Images\Bowl\step2p2.PNG" />
@@ -63,6 +105,36 @@
 
   <ItemGroup>
     <EmbeddedResource Update="BiroPage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BiroPage10.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BiroPage11.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BiroPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BiroPage3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BiroPage4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BiroPage5.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BiroPage6.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BiroPage7.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BiroPage8.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BiroPage9.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="BiroPageMain.xaml">
@@ -110,9 +182,5 @@
     <EmbeddedResource Update="Terms.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Assets\Images\Biro\" />
   </ItemGroup>
 </Project>

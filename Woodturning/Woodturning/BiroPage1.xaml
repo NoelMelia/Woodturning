@@ -3,10 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Woodturning.BiroPage1">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Welcome to Step 1 of Woodturning a Biro"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="Red"/>
+                <Image x:Name="Test" Aspect="AspectFit"/>
+                <Label Text="&#x2022;For this Instructable you need these supplies to design a Wooden Biro."/>
+                <Label Text="&#x2022;Most of these tools you can substitute for something else cheaper."/>
+                <Label Text="&#x2022;Lathe"/>
+                <Label Text="&#x2022;Skew (the tool that you turn the wood with)"/>
+                <Label Text="&#x2022;Wood ( i'm using yellow heart one of my favorites)"/>
+                <Label Text="&#x2022;CA glue or Super Glue (thick and thin if possible)"/>
+                <Label Text="&#x2022;Mandrel to hold the pen on with 3 bushings"/>
+                <Label Text="&#x2022;Sand paper"/>
+                <Label Text="&#x2022;Pen Kit or you could use pieces from a old pen that you don't use anymore"/>
+                <Label Text="&#x2022;Paper towels"/>
+                <Label Text="&#x2022;BLO (boiled linseed oil)"/>
+                <Label Text="&#x2022;Drill press or equivalent"/>
+                <Label Text="&#x2022;Clamp"/>
+                <Label Text="&#x2022;BLO (boiled linseed oil)"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

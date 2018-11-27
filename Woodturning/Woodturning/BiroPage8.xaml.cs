@@ -10,20 +10,21 @@ using Xamarin.Forms.Xaml;
 namespace Woodturning
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class BiroPage1 : ContentPage
+	public partial class BiroPage8 : ContentPage
 	{
-		public BiroPage1 ()
+		public BiroPage8 ()
 		{
 			InitializeComponent ();
-            SetupImageOnThisPage();
+            SetupImageOnThisPage3();
         }
-        private void SetupImageOnThisPage()
+        private void SetupImageOnThisPage3()
         {
-            var assembly = typeof(BiroPage1);
+            var assembly = typeof(BiroPage8);
 
-            string fileName = "Woodturning.Assets.Images.Biro.main.png";
+            string fileName = "Woodturning.Assets.Images.Biro.part8.png";
 
             Test.Source = ImageSource.FromResource(fileName, assembly);
         }
+
     }
 }

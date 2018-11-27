@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Woodturning.BiroPage9">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Welcome to Step 9 of Woodturning a Biro"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="Red"/>
+                <Image x:Name="Test" Aspect="AspectFit"/>
+                <Label Text="&#x2022;After you do the CA finish you will see that the blanks are shiny, you will want to take 400 grit sand paper and get rid of all the shiny spots. "/>
+                <Label Text="&#x2022;You will then take Micro Mesh sanding system and sand from 1,500 grit to 12,000 grit. "/>
+                <Label Text="&#x2022;Every other grit you should turn off your lathe and sand back and forth horizontally while turning the lathe by hand. "/>
+                <Label Text="&#x2022;This will get rid of sanding and tool lines. "/>
+              
+                <Image x:Name="Test2" Aspect="AspectFit"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
