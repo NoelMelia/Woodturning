@@ -9,31 +9,25 @@
              Title="Terms and Conditions"
     >
     <ContentPage.Content>
-        
+        <StackLayout>
+            <Grid>
+                <Image x:Name="BackImage" Aspect="Fill"/>
 
-            <StackLayout  Orientation="Vertical">
-                <Grid>
-                    <Image x:Name="BackImage" Aspect="Fill"/>
-
-                    <StackLayout VerticalOptions="Center">
-
-                    <ic:CircleImage 
+                <ic:CircleImage 
                         x:Name="newLogo" 
                             WidthRequest="100"
                             HeightRequest="100"
                             HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            Margin="0,10,0,0">
-                            <ic:CircleImage.GestureRecognizers>
-                                <TapGestureRecognizer 
+                            VerticalOptions="Start"
+                            Margin="0,60,0,0">
+                    <ic:CircleImage.GestureRecognizers>
+                        <TapGestureRecognizer 
                                     Tapped="TapGestureRecognizer_Tapped"
                                     NumberOfTapsRequired="1">
-                                </TapGestureRecognizer>
-                            </ic:CircleImage.GestureRecognizers>
-                        </ic:CircleImage>
-
-
-                        <Picker x:Name="MainPicker"
+                        </TapGestureRecognizer>
+                    </ic:CircleImage.GestureRecognizers>
+                </ic:CircleImage>
+                <Picker x:Name="MainPicker"
                         
                             Title="Select"
                             FontAttributes="Bold"
@@ -44,40 +38,28 @@
                             VerticalOptions="Center"
                             SelectedIndexChanged="MainPicker_SelectedIndexChanged"
                             Margin="0,0,40,280">
-                        </Picker>
+                </Picker>
 
-
-
-                    </StackLayout>
+                <!-- Drop Down Icon -->
+                <StackLayout Orientation="Vertical">
                     <!-- Drop Down Icon -->
-                    <StackLayout Orientation="Vertical">
-                        <!-- Drop Down Icon -->
-                        <Label Text="Terms and Conditions Details"
+                    <Label Text="Terms and Conditions Details"
                            FontAttributes="Bold"
                            FontSize="Medium"
                            Margin="30,20,30,0"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            TextColor="Red"/>
-                        <Label Text=" When you apply to use NMTWoodturning services, you will be asked to select a Username, Email and Password. The Username, Email and Password are the means through which you access certain services. You acknowledge and agree that it is your responsibility to safeguard the Username, Email and Password you select from any unauthorized use. IN NO EVENT WILL NMT Woodturning BE LIABLE FOR THE UNAUTHORIZED USE OR MISUSE OF YOUR Username, Email and Password. Users are responsible for maintaining accurate account information at all times, including credit card and contact information. This information can be updated in your account control panel."
+                    <Label Text=" When you apply to use NMTWoodturning services, you will be asked to select a Username, Email and Password. The Username, Email and Password are the means through which you access certain services. You acknowledge and agree that it is your responsibility to safeguard the Username, Email and Password you select from any unauthorized use. IN NO EVENT WILL NMT Woodturning BE LIABLE FOR THE UNAUTHORIZED USE OR MISUSE OF YOUR Username, Email and Password. Users are responsible for maintaining accurate account information at all times, including credit card and contact information. This information can be updated in your account control panel."
                            FontAttributes="Italic"
                            FontSize="Default"
                            Margin="30,180,30,0"
                                TextColor="White"
                            VerticalOptions="Center"
                            />
-                    </StackLayout>
 
-
-                </Grid>
-            </StackLayout>
-
-        
-
-
-
-
-
+                </StackLayout>
+            </Grid>
+        </StackLayout>
     </ContentPage.Content>
-
 </ContentPage>
