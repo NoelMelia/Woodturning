@@ -6,7 +6,7 @@ namespace Woodturning
 {
     public class SignUpPageCS : ContentPage
     {
-        Entry usernameEntry, passwordEntry, emailEntry;
+        /*Entry usernameEntry, passwordEntry, emailEntry;
         Label messageLabel;
 
         public SignUpPageCS()
@@ -75,6 +75,6 @@ namespace Woodturning
         bool AreDetailsValid(User user)
         {
             return (!string.IsNullOrWhiteSpace(user.Username) && !string.IsNullOrWhiteSpace(user.Password) && !string.IsNullOrWhiteSpace(user.Email) && user.Email.Contains("@"));
-        }
+        }*/
     }
 }
