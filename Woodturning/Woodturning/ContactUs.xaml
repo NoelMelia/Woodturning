@@ -15,8 +15,8 @@
 
                 <ic:CircleImage 
                         x:Name="newLogo" 
-                            WidthRequest="100"
-                            HeightRequest="100"
+                            WidthRequest="150"
+                            HeightRequest="150"
                             HorizontalOptions="Center"
                             VerticalOptions="Start"
                             Margin="0,60,0,0">
@@ -39,32 +39,32 @@
                             WidthRequest="100"
                             HeightRequest="50"
                             HorizontalOptions="End"
-                            VerticalOptions="Center"
+                            VerticalOptions="Start"
                             SelectedIndexChanged="MainPicker_SelectedIndexChanged"
-                            Margin="0,0,40,280">
+                            Margin="0,60,40,0">
                 </Picker>
 
                 <!-- Drop Down Icon -->
-                <StackLayout Orientation="Vertical">
+                
                     <!-- Drop Down Icon -->
                     <Label Text="Contact Us"
                            FontAttributes="Bold"
                            FontSize="Medium"
-                           Margin="30,20,30,0"
+                           Margin="30,0,30,80"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            TextColor="Red"/>
                     <Label Text="Contact Details"
                            FontAttributes="Bold"
                            FontSize="Medium"
-                           Margin="30,180,30,0"
+                           Margin="30,40,30,0"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            TextColor="Red"/>
                     <Label Text="Company Name: NMT Woodturning"
                            FontAttributes="Italic"
                            FontSize="Default"
-                           Margin="30,20,30,0"
+                           Margin="30,100,30,0"
                                TextColor="White"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
@@ -72,7 +72,7 @@
                     <Label Text="Email Address: noelmelia1989@yahoo.co.uk"
                            FontAttributes="Italic"
                            FontSize="Default"
-                           Margin="30,10,30,0"
+                           Margin="30,140,30,0"
                                TextColor="White"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
@@ -80,7 +80,7 @@
                     <Label Text="Phone Number: noelmelia1989@yahoo.co.uk"
                            FontAttributes="Italic"
                            FontSize="Default"
-                           Margin="30,10,30,0"
+                           Margin="30,180,30,0"
                                TextColor="White"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
@@ -88,12 +88,12 @@
                     <Label Text="You can contact the company between the opening hours of 9am to 5pm, Monday to Friday"
                            FontAttributes="Italic"
                            FontSize="Default"
-                           Margin="30,10,30,0"
+                           Margin="30,220,30,0"
                                TextColor="White"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            />
-                </StackLayout>
+                
             </Grid>
         </StackLayout>
     </ContentPage.Content>

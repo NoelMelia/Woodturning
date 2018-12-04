@@ -15,8 +15,8 @@
 
                 <ic:CircleImage 
                         x:Name="newLogo" 
-                            WidthRequest="100"
-                            HeightRequest="100"
+                            WidthRequest="150"
+                            HeightRequest="150"
                             HorizontalOptions="Center"
                             VerticalOptions="Start"
                             Margin="0,60,0,0">
@@ -41,12 +41,12 @@
                 </Picker>
 
                 <!-- Drop Down Icon -->
-                <StackLayout Orientation="Vertical">
+                
                     <!-- Drop Down Icon -->
                     <Label Text="Terms and Conditions Details"
                            FontAttributes="Bold"
                            FontSize="Medium"
-                           Margin="30,20,30,0"
+                           Margin="30,0,30,80"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            TextColor="Red"/>
@@ -58,7 +58,7 @@
                            VerticalOptions="Center"
                            />
 
-                </StackLayout>
+                
             </Grid>
         </StackLayout>
     </ContentPage.Content>

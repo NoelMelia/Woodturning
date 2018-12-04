@@ -4,20 +4,19 @@
              x:Class="Woodturning.BiroPageMain"
             xmlns:local="clr-namespace:Woodturning"
             xmlns:BiroPageMain="clr-namespace:Woodturning"
-            Title="Instructions on how to make a Wooden Biro"
-            >
+            Title="Instructions on how to make a Wooden Biro">
 
 
-    <BiroPageMain:BiroPage1 Title="Step 1" />
-    <BiroPageMain:BiroPage2 Title="Step 2"/>
-    <BiroPageMain:BiroPage3 Title="Step 3"/>
-    <BiroPageMain:BiroPage4 Title="Step 4"/>
-    <BiroPageMain:BiroPage5 Title="Step 5"/>
-    <BiroPageMain:BiroPage6 Title="Step 6"/>
-    <BiroPageMain:BiroPage7 Title="Step 7"/>
-    <BiroPageMain:BiroPage8 Title="Step 8"/>
-    <BiroPageMain:BiroPage9 Title="Step 9"/>
-    <BiroPageMain:BiroPage10 Title="Step 10"/>
-    <BiroPageMain:BiroPage11 Title="Step 11"/>
+    <BiroPageMain:BiroPage1 Title="1" />
+    <BiroPageMain:BiroPage2 Title="2"/>
+    <BiroPageMain:BiroPage3 Title="3"/>
+    <BiroPageMain:BiroPage4 Title="4"/>
+    <BiroPageMain:BiroPage5 Title="5"/>
+    <BiroPageMain:BiroPage6 Title="6"/>
+    <BiroPageMain:BiroPage7 Title="7"/>
+    <BiroPageMain:BiroPage8 Title="8"/>
+    <BiroPageMain:BiroPage9 Title="9"/>
+    <BiroPageMain:BiroPage10 Title="10"/>
+    <BiroPageMain:BiroPage11 Title="11"/>
 
 </TabbedPage>

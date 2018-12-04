@@ -12,16 +12,16 @@ namespace Woodturning
             
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new MainPage());
+            
 
-            /*if (!IsUserLoggedIn)
+            if (!IsUserLoggedIn)
             {
                 MainPage = new NavigationPage(new Login());
             }
             else
             {
                 MainPage = new NavigationPage(new MainPage());
-            }*/
+            }
         }
 
         
@@ -40,5 +40,10 @@ namespace Woodturning
         {
             // Handle when your app resumes
         }
+
+
+
+
     }
+
 }
