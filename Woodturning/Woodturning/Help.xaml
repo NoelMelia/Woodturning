@@ -18,8 +18,8 @@
                     
                         <ic:CircleImage 
                         x:Name="newLogo" 
-                            WidthRequest="100"
-                            HeightRequest="100"
+                            WidthRequest="150"
+                            HeightRequest="150"
                             HorizontalOptions="Center"
                             VerticalOptions="Start"
                             Margin="0,60,0,0">
@@ -31,7 +31,6 @@
                             </ic:CircleImage.GestureRecognizers>
                         </ic:CircleImage>
 
-
                         <Picker x:Name="MainPicker"
                         
                             Title="Select"
@@ -40,7 +39,7 @@
                             WidthRequest="100"
                             HeightRequest="50"
                             HorizontalOptions="End"
-                            VerticalOptions="Center"
+                            VerticalOptions="Start"
                             SelectedIndexChanged="MainPicker_SelectedIndexChanged"
                             Margin="0,0,40,280">
                         </Picker>
@@ -48,12 +47,12 @@
 
 
                    
-                    <StackLayout Orientation="Vertical">
+                    
                         <!-- Drop Down Icon -->
                         <Label Text="Help Details"
                            FontAttributes="Bold"
                            FontSize="Medium"
-                           Margin="30,20,30,0"
+                           Margin="30,0,30,80"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            TextColor="Red"/>
@@ -64,7 +63,7 @@
                                TextColor="White"
                            VerticalOptions="Center"
                            />
-                    </StackLayout>
+                    
                 </Grid>
             </StackLayout>
         </StackLayout>

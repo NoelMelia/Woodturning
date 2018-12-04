@@ -6,19 +6,14 @@
             xmlns:local="clr-namespace:Woodturning"
             Title="Instructions on how to make a Wooden Bowl">
 
-
-
-    <BowlPageMain:BowlPage1 Title="Step 1" />
-    <BowlPageMain:BowlPage2 Title="Step 2"/>
-    <BowlPageMain:BowlPage3 Title="Step 3"/>
-    <BowlPageMain:BowlPage4 Title="Step 4"/>
-    <BowlPageMain:BowlPage5 Title="Step 5"/>
-    <BowlPageMain:BowlPage6 Title="Step 6"/>
-    <BowlPageMain:BowlPage7 Title="Step 7"/>
-    <BowlPageMain:BowlPage8 Title="Step 8"/>
-
-
-
+    <BowlPageMain:BowlPage1 Title="1" />
+    <BowlPageMain:BowlPage2 Title="2"/>
+    <BowlPageMain:BowlPage3 Title="3"/>
+    <BowlPageMain:BowlPage4 Title="4"/>
+    <BowlPageMain:BowlPage5 Title="5"/>
+    <BowlPageMain:BowlPage6 Title="6"/>
+    <BowlPageMain:BowlPage7 Title="7"/>
+    <BowlPageMain:BowlPage8 Title="8"/>
 
 </TabbedPage>
 

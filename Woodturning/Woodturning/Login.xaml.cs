@@ -81,7 +81,6 @@ namespace Woodturning
 
         }
 
-
         async void OnSignUpButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Register());
@@ -99,7 +98,7 @@ namespace Woodturning
             if (isValid)
             {
                 App.IsUserLoggedIn = true;
-                await DisplayAlert("Welcome", Convert.ToString(usernameEntry), "OK");
+                //await DisplayAlert("Welcome", Convert.ToString(usernameEntry), "OK");
                 Navigation.InsertPageBefore(new MainPage(), this);
                 await Navigation.PopAsync();
             }
@@ -114,6 +113,7 @@ namespace Woodturning
         {
             return user.Username == Constants.Username && user.Password == Constants.Password;
         }
+
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MainPage());
