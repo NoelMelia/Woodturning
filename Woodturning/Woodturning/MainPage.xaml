@@ -11,17 +11,6 @@
     <ContentPage.Content>
         <StackLayout>
             <!-- Logo -->
-            <Label Text="NMT Woodturning!"
-                VerticalOptions="Start" 
-                HorizontalOptions="Center" 
-               TextColor="Red"
-               Margin="0,0,0,0"
-               FontAttributes="Bold"
-               FontSize="Medium"
-               />
-
-
-
             <StackLayout  Orientation="Vertical">
                 <Grid>
                     <Image x:Name="BackImage" Aspect="Fill"/>

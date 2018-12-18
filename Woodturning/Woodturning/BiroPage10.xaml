@@ -10,16 +10,16 @@
                 HorizontalOptions="CenterAndExpand"
                    TextColor="Red"/>
                 <Image x:Name="Test" Aspect="AspectFit"/>
-                <Label Text="&#x2022;After you have done Micro Mesh you need to tale out your Beall buffing and finishing system. "/>
-                <Label Text="&#x2022;This is a 3 step process that starts with tripoli then white diamond then carnauba wax.  "/>
-                <Label Text="&#x2022;You load these with the finish by turning on your lathe a rubbing the bars on to the wheels.  "/>
-                <Label Text="&#x2022;While the wheels are spinning twist and turn your blanks (still on the mandrel) in the wheels so there is a even and thick coat.  "/>
+                <Label FontSize="Medium" Text="&#x2022;After you have done Micro Mesh you need to tale out your Beall buffing and finishing system. "/>
+                <Label FontSize="Medium" Text="&#x2022;This is a 3 step process that starts with tripoli then white diamond then carnauba wax.  "/>
+                <Label FontSize="Medium" Text="&#x2022;You load these with the finish by turning on your lathe a rubbing the bars on to the wheels.  "/>
+                <Label FontSize="Medium" Text="&#x2022;While the wheels are spinning twist and turn your blanks (still on the mandrel) in the wheels so there is a even and thick coat.  "/>
                 <Image x:Name="Test2" Aspect="AspectFit"/>
-                <Label Text="&#x2022;After that take the blanks off the mandrel and get out the pen press or clamp. "/>
-                <Label Text="&#x2022;Check the blanks to see if there are and imperfections and if there are set that blank to the side and get the other one and press the tip in to one end. "/>
-                <Label Text="&#x2022;Then take the same blank with the tip and put the transmission in the other end.  "/>
-                <Label Text="&#x2022;BE CAREFUL not to put the transmission in to far, push it in to the line and then put in the ink refill and see how far it goes. "/>
-                <Label Text="&#x2022;After that take the blank with the imperfection and take the clip and little cap, and position the clip over the imperfection and then put the spacer on between them and stick them together.  "/>
+                <Label FontSize="Medium" Text="&#x2022;After that take the blanks off the mandrel and get out the pen press or clamp. "/>
+                <Label FontSize="Medium" Text="&#x2022;Check the blanks to see if there are and imperfections and if there are set that blank to the side and get the other one and press the tip in to one end. "/>
+                <Label FontSize="Medium" Text="&#x2022;Then take the same blank with the tip and put the transmission in the other end.  "/>
+                <Label FontSize="Medium" Text="&#x2022;BE CAREFUL not to put the transmission in to far, push it in to the line and then put in the ink refill and see how far it goes. "/>
+                <Label FontSize="Medium" Text="&#x2022;After that take the blank with the imperfection and take the clip and little cap, and position the clip over the imperfection and then put the spacer on between them and stick them together.  "/>
                 
                 
             </StackLayout>

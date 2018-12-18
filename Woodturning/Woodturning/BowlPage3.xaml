@@ -10,15 +10,15 @@
                 HorizontalOptions="CenterAndExpand"
                    TextColor="Red"/>
                 <Image x:Name="Test" Aspect="AspectFit"/>
-                <Label Text="&#x2022;Draw a line at the center of the ball."/>
-                <Label Text="&#x2022;Then remove ball from the lathe and cut the tenons off."/>
-                <Label Text="&#x2022;Now mount the ball between centers using the line as your center marks."/>
-                <Label Text="&#x2022;Now the pith runs perpendicular to the bed."/>
-                <Label Text="&#x2022;Rotate the ball by hand and check to see that it's centered."/>
-                <Label Text="&#x2022;If not readjust it slightly."/>
-                <Label Text="&#x2022;Your ball probably won't be round at this point."/>
-                <Label Text="&#x2022;You can see a shadow as it rotates."/>
-                <Label Text="&#x2022;Step 4 will continue in making of bowl"/>
+                <Label FontSize="Medium" Text="&#x2022;Draw a line at the center of the ball."/>
+                <Label FontSize="Medium" Text="&#x2022;Then remove ball from the lathe and cut the tenons off."/>
+                <Label FontSize="Medium" Text="&#x2022;Now mount the ball between centers using the line as your center marks."/>
+                <Label FontSize="Medium" Text="&#x2022;Now the pith runs perpendicular to the bed."/>
+                <Label FontSize="Medium" Text="&#x2022;Rotate the ball by hand and check to see that it's centered."/>
+                <Label FontSize="Medium" Text="&#x2022;If not readjust it slightly."/>
+                <Label FontSize="Medium" Text="&#x2022;Your ball probably won't be round at this point."/>
+                <Label FontSize="Medium" Text="&#x2022;You can see a shadow as it rotates."/>
+                <Label FontSize="Medium" Text="&#x2022;Step 4 will continue in making of bowl"/>
 
             </StackLayout>
         </ScrollView>

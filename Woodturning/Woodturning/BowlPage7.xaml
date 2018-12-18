@@ -10,14 +10,14 @@
                 HorizontalOptions="CenterAndExpand"
                    TextColor="Red"/>
                 <Image x:Name="Test" Aspect="AspectFit"/>
-                <Label Text="&#x2022;You can now carve this little tenon off."/>
-                <Label Text="&#x2022;I use my spindle gouge to remove the little tenon."/>
-                <Label Text="&#x2022;I push forward very gently while keeping pressure on the bevel to hold the bowl in place."/>
-                <Label Text="&#x2022;This allows me to cut allof the tenon off with the spindle gouge instead of carving it off."/>
-                <Label Text="&#x2022;Sand this area."/>
+                <Label FontSize="Medium" Text="&#x2022;You can now carve this little tenon off."/>
+                <Label FontSize="Medium" Text="&#x2022;I use my spindle gouge to remove the little tenon."/>
+                <Label FontSize="Medium" Text="&#x2022;I push forward very gently while keeping pressure on the bevel to hold the bowl in place."/>
+                <Label FontSize="Medium" Text="&#x2022;This allows me to cut allof the tenon off with the spindle gouge instead of carving it off."/>
+                <Label FontSize="Medium" Text="&#x2022;Sand this area."/>
                 <Image x:Name="Test2" Aspect="AspectFit"/>
-                <Label Text="&#x2022;You now have 2 side grain bowls that are the same diameter as the original log."/>
-                <Label Text="&#x2022;Step 8 will continue in making of bowl and the final image will show this."/>
+                <Label FontSize="Medium" Text="&#x2022;You now have 2 side grain bowls that are the same diameter as the original log."/>
+                <Label FontSize="Medium" Text="&#x2022;Step 8 will continue in making of bowl and the final image will show this."/>
 
             </StackLayout>
         </ScrollView>

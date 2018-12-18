@@ -32,16 +32,16 @@
 
 
                 <Picker x:Name="MainPicker"
-                        
+                            BackgroundColor="Beige"
                             Title="Select"
                             FontAttributes="Bold"
                             TextColor="Red"
                             WidthRequest="100"
                             HeightRequest="50"
                             HorizontalOptions="End"
-                            VerticalOptions="Start"
+                            VerticalOptions="Center"
                             SelectedIndexChanged="MainPicker_SelectedIndexChanged"
-                            Margin="0,60,40,0">
+                            Margin="0,0,40,280">
                 </Picker>
 
                 <!-- Drop Down Icon -->

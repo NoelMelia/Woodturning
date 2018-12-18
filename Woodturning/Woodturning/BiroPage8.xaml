@@ -10,14 +10,14 @@
                 HorizontalOptions="CenterAndExpand"
                    TextColor="Red"/>
                 <Image x:Name="Test" Aspect="AspectFit"/>
-                <Label Text="&#x2022;In this step you will start to apply the finish. "/>
-                <Label Text="&#x2022;You need CA glue or regular super glue. "/>
-                <Label Text="&#x2022;(CA glue works better) If you have thin glue start with this then do thick glue. "/>
-                <Label Text="&#x2022;Make sure to make the glue as smooth as possible and even. "/>
-                <Label Text="&#x2022;Take your glue and paper towel and put the paper towel on the bottom of the pen then squeeze glue and smooth out the ridges."/>
-                <Label Text="&#x2022;The paper towel does get hot and does smoke. "/>
-                <Label Text="&#x2022;Make sure not to take away the paper towel to fast because it will look bad, but don't leave it on too long because the glue will set up and will stick to the pen."/>
-                <Label Text="&#x2022;You will want to do 1 coat of thin and 2 or 3 coats of thick depending on how smooth the blanks are."/>
+                <Label FontSize="Medium" Text="&#x2022;In this step you will start to apply the finish. "/>
+                <Label FontSize="Medium" Text="&#x2022;You need CA glue or regular super glue. "/>
+                <Label FontSize="Medium" Text="&#x2022;(CA glue works better) If you have thin glue start with this then do thick glue. "/>
+                <Label FontSize="Medium" Text="&#x2022;Make sure to make the glue as smooth as possible and even. "/>
+                <Label FontSize="Medium" Text="&#x2022;Take your glue and paper towel and put the paper towel on the bottom of the pen then squeeze glue and smooth out the ridges."/>
+                <Label FontSize="Medium" Text="&#x2022;The paper towel does get hot and does smoke. "/>
+                <Label FontSize="Medium" Text="&#x2022;Make sure not to take away the paper towel to fast because it will look bad, but don't leave it on too long because the glue will set up and will stick to the pen."/>
+                <Label FontSize="Medium" Text="&#x2022;You will want to do 1 coat of thin and 2 or 3 coats of thick depending on how smooth the blanks are."/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

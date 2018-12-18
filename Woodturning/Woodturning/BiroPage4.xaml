@@ -10,10 +10,10 @@
                 HorizontalOptions="CenterAndExpand"
                    TextColor="Red"/>
                 <Image x:Name="Test" Aspect="AspectFit"/>
-                <Label Text="&#x2022;Sand the blanks so that they are not shiny and then apply a line of thick CA glue to the tube and push in to the blank. "/>
+                <Label FontSize="Medium" Text="&#x2022;Sand the blanks so that they are not shiny and then apply a line of thick CA glue to the tube and push in to the blank. "/>
                 <Image x:Name="Test3" Aspect="AspectFit"/>
-                <Label Text="&#x2022;Pull and twist the blank so that the glue gets all over the inside of the hole then repeat on the other side."/>
-                <Label Text="&#x2022;After you have done that push in the tube so that it is not sticking out of either side of the wood."/>
+                <Label FontSize="Medium" Text="&#x2022;Pull and twist the blank so that the glue gets all over the inside of the hole then repeat on the other side."/>
+                <Label FontSize="Medium" Text="&#x2022;After you have done that push in the tube so that it is not sticking out of either side of the wood."/>
                 
                 <Image x:Name="Test2" Aspect="AspectFit"/>
             </StackLayout>

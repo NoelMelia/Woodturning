@@ -1,13 +1,20 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
+using System.IO;
 using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace Woodturning
 {
+
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Register : ContentPage
 	{
+        private const String OUTPUT_FILE = "LoginDetails.txt";
+        //variables userinput, passwordinput, emailinput
+        String userInput, passwordinput,emailInput;
+        
         public Register()
         {
             InitializeComponent();            
@@ -26,32 +33,10 @@ namespace Woodturning
 
         }
 
-        async void OnSignUpButtonClicked(object sender, EventArgs e)
+        async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            var user = new User()
-            {
-                Username = usernameEntry.Text,
-                Password = passwordEntry.Text,
-                Email = emailEntry.Text
-            };
+            await Navigation.PushAsync(new MainPage());
 
-            // Sign up logic goes here
-
-            var signUpSucceeded = AreDetailsValid(user);
-            if (signUpSucceeded)
-            {
-                var rootPage = Navigation.NavigationStack.FirstOrDefault();
-                if (rootPage != null)
-                {
-                    App.IsUserLoggedIn = true;
-                    Navigation.InsertPageBefore(new MainPage(), Navigation.NavigationStack.First());
-                    await Navigation.PopToRootAsync();
-                }
-            }
-            else
-            {
-                messageLabel.Text = "Sign up failed";
-            }
         }
 
         bool AreDetailsValid(User user)
@@ -109,14 +94,40 @@ namespace Woodturning
 
 
         }
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private void OnSignUpButtonClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MainPage());
-        }
+            dynamic emp = new JObject();
+            userInput = usernameEntry.Text;
+            passwordinput = passwordEntry.Text;
+            emailInput = emailEntry.Text;
+            
+            emp.Username = userInput;
+            emp.Password = passwordinput;
+            emp.Email = emailInput;
 
-        private void Button_Clicked(object sender, EventArgs e)
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            string filname = Path.Combine(path, OUTPUT_FILE);
+            string outputString = emp.ToString();
+
+            File.WriteAllText(filname, outputString);
+            if((emp.Username==null) && (emp.Password==null) && (emp.Email == null) && (emp.Email!="@"))
+            {
+                messageLabel.Text = "Login failed";
+            }
+            else
+            {
+                App.IsUserLoggedIn = true;
+                Navigation.InsertPageBefore(new MainPage(), this);
+                Navigation.PopAsync();
+                
+            }
+
+        }//OnSignUpButtonClicked
+
+        private void Login_Button_Clicked(object sender, EventArgs e)
         {
+        
             Navigation.PushAsync(new Login());
-        }
+        }//Login_Button_Clicked
     }
 }
