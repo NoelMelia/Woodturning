@@ -125,8 +125,7 @@ namespace Woodturning
         }//OnSignUpButtonClicked
 
         private void Login_Button_Clicked(object sender, EventArgs e)
-        {
-        
+        {       
             Navigation.PushAsync(new Login());
         }//Login_Button_Clicked
     }
