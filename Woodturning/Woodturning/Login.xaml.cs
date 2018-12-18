@@ -2,20 +2,34 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Woodturning;
+using Newtonsoft;
+using System.IO;
+using Newtonsoft.Json.Linq;
+using System.Reflection;
+using Newtonsoft.Json;
 
 namespace Woodturning
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Login : ContentPage
 	{
+        //constant
+        private const String OUTPUT_FILE = "LoginDetails.txt";
+        //Object
+        Constants myConstants;
+        //variables
+        string Username;
+        string Password;
+
         public Login()
         {
             InitializeComponent();
             backgroundImage();
             SetupImageOnThisPage();
-            pickerOfItems();
-
+            pickerOfItems();          
         }
+
+        
 
         private void backgroundImage()
         {
@@ -26,8 +40,6 @@ namespace Woodturning
             BackImage.Source = ImageSource.FromResource(fileName, assembly);
 
         }
-
-
         private void pickerOfItems()
         {
             MainPicker.ItemsSource = new string[]
@@ -37,7 +49,6 @@ namespace Woodturning
                                             "Terms",
                                             "Help"};
         }
-
         private void SetupImageOnThisPage()
         {
             var assembly = typeof(Login);
@@ -48,7 +59,6 @@ namespace Woodturning
 
             
         }
-
         private void MainPicker_SelectedIndexChanged(object sender, EventArgs e)
         {
             var picker = (Picker)sender;
@@ -80,43 +90,97 @@ namespace Woodturning
             }
 
         }
-
         async void OnSignUpButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Register());
         }
 
-        async void OnLoginButtonClicked(object sender, EventArgs e)
+        void OnLoginButtonClicked(object sender, EventArgs e)
         {
-            var user = new User
+            //get user inputs
+            Username = usernameEntry.Text;
+            Password = passwordEntry.Text;
+           
+            //load file
+            try
             {
-                Username = usernameEntry.Text,
-                Password = passwordEntry.Text
-            };
+                //check if file exists
+                string path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+                string filename = Path.Combine(path, OUTPUT_FILE);
+                string inputText = File.ReadAllText(filename);
 
-            var isValid = AreCredentialsCorrect(user);
-            if (isValid)
-            {
-                App.IsUserLoggedIn = true;
-                //await DisplayAlert("Welcome", Convert.ToString(usernameEntry), "OK");
-                Navigation.InsertPageBefore(new MainPage(), this);
-                await Navigation.PopAsync();
+                //Testing to see if not empty
+                if (inputText != null)
+                {
+                    var clientLogin = JObject.Parse(inputText);
+
+                    //make variables from JSon Array
+                    for(int i = 0; i<1; i++)
+                    {
+                        var name = clientLogin["Username"];
+                        var pass = clientLogin["Password"];
+                        var email = clientLogin["Email"];
+
+                        //check if input matches data
+                        if (Username == (string)name && Password == (string)pass)
+                        {
+                            App.IsUserLoggedIn = true;
+
+                            Navigation.InsertPageBefore(new MainPage(), this);
+                            Navigation.PopAsync();
+
+                        }
+                        else
+                        {
+                            messageLabel.Text = "Login failed";
+                            passwordEntry.Text = string.Empty;
+                        }
+                    }//for
+                 
+                }//if
+
             }
-            else
+            catch
             {
-                messageLabel.Text = "Login failed";
-                passwordEntry.Text = string.Empty;
+                if(Constants.Uname == Username && Constants.Pword == Password)
+                {
+                    App.IsUserLoggedIn = true;
+
+                    Navigation.InsertPageBefore(new MainPage(), this);
+                    Navigation.PopAsync();
+                }
+                else
+                {
+                    messageLabel.Text = "Login failed";
+                }
+   
             }
-        }
+
+            //var isValid = AreCredentialsCorrect(user);
+            //if (isValid)
+            //{
+            //    App.IsUserLoggedIn = true;
+
+            //    Navigation.InsertPageBefore(new MainPage(), this);
+            //    await Navigation.PopAsync();
+            //}
+            //else
+            //{
+            //    messageLabel.Text = "Login failed";
+            //    passwordEntry.Text = string.Empty;
+            //}
+        }//CLICKED
 
         bool AreCredentialsCorrect(User user)
         {
-            return user.Username == Constants.Username && user.Password == Constants.Password;
+            return user.Username == Constants.Uname && user.Password == Constants.Pword;
         }
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MainPage());
         }
+
+
     }
 }

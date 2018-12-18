@@ -5,12 +5,10 @@ using System.Text;
 namespace Woodturning
 {
     class Constants
-    {
-        public static string Username =  "Xamarin";
-        public static string Password = "password";
-        public static string Username2 = "nomelia";
-        public static string Password2 = "timmy08";
-
+    {       
+        public static string Uname =  "Xamarin";
+        public static string Pword = "password";
+        public static string Eml = "noelmelia1989@yahoo.co.uk";
     }
 
 }

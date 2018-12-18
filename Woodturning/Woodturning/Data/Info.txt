@@ -1,17 +1,17 @@
 ﻿[
-{
-"Username":"nomelia",
-"Password":"timmy08",
-"Email":"noelmelia1989@yahoo.co.uk"
-},
-{
-"Username":"johnd",
-"Password":"12345",
-"Email":"johndaly@hotmail.com"
-},
-{
-"Username":"Xamarin",
-"Password":"password",
-"Email":"xamarin@yahoo.co.uk"
-}
+	{
+		"Username":"test",
+		"Password":"1234",
+		"Email":"noelmelia1989@yahoo.co.uk"
+	},
+	{
+		"Username":"johnd",
+		"Password":"12345",
+		"Email":"johndaly@hotmail.com"
+	},
+	{
+		"Username":"Xamarin",
+		"Password":"password",
+		"Email":"xamarin@yahoo.co.uk"
+	}
 ]

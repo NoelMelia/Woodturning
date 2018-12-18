@@ -10,13 +10,13 @@
                 HorizontalOptions="CenterAndExpand"
                    TextColor="Red"/>
                 <Image x:Name="Test" Aspect="AspectFit"/>
-                <Label Text="&#x2022;Turn away the shadow potion."/>
-                <Label Text="&#x2022;Now imagine 2 bowls facing each other."/>
-                <Label Text="&#x2022;Use a parting tool to make a shallow cut to help identify the bowls."/>
-                <Label Text="&#x2022;Turn the outside of each bowl shape including the foot and a small tenon."/>
-                <Label Text="&#x2022;Sand the outside of the bowls."/>
-                <Label Text="&#x2022;Now use the parting tool to extend the center cut down until there is a very small tenon."/>
-                <Label Text="&#x2022;Step 5 will continue in making of bowl"/>
+                <Label FontSize="Medium" Text="&#x2022;Turn away the shadow potion."/>
+                <Label FontSize="Medium" Text="&#x2022;Now imagine 2 bowls facing each other."/>
+                <Label FontSize="Medium" Text="&#x2022;Use a parting tool to make a shallow cut to help identify the bowls."/>
+                <Label FontSize="Medium" Text="&#x2022;Turn the outside of each bowl shape including the foot and a small tenon."/>
+                <Label FontSize="Medium" Text="&#x2022;Sand the outside of the bowls."/>
+                <Label FontSize="Medium" Text="&#x2022;Now use the parting tool to extend the center cut down until there is a very small tenon."/>
+                <Label FontSize="Medium" Text="&#x2022;Step 5 will continue in making of bowl"/>
 
             </StackLayout>
         </ScrollView>

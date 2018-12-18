@@ -10,11 +10,11 @@
                 HorizontalOptions="CenterAndExpand"
                    TextColor="Red"/>
                 <Image x:Name="Test" Aspect="AspectFit"/>
-                <Label Text="&#x2022;1. When you first start turning one of the biggest problems is finding wood to turn. "/>
-                <Label Text="&#x2022;2. Try to make the timber blank s Then you can Mount a log between centers."/>
-                <Label Text="&#x2022;3. Turn the log into a cylinder removing the bark and cambium layer."/>
-                <Label Text="&#x2022;4. Measure the diameter and put 2 lines this distance apart on the cylinder."/>
-                <Label Text="&#x2022;5. To be Continued on Step 2."/>
+                <Label FontSize="Medium" Text="&#x2022;When you first start turning one of the biggest problems is finding wood to turn. "/>
+                <Label  FontSize="Medium" Text="&#x2022;Try to make the timber blank s Then you can Mount a log between centers."/>
+                <Label FontSize="Medium" Text="&#x2022;Turn the log into a cylinder removing the bark and cambium layer."/>
+                <Label FontSize="Medium" Text="&#x2022;Measure the diameter and put 2 lines this distance apart on the cylinder."/>
+                <Label FontSize="Medium" Text="&#x2022;To be Continued on Step 2."/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

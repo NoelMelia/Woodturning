@@ -11,13 +11,13 @@
                 HorizontalOptions="CenterAndExpand"
                    TextColor="Red"/>
             <Image x:Name="Test" Aspect="AspectFit"/>
-                <Label Text="&#x2022; Now begin turning a ball shape into a curved shape."/>
+                <Label FontSize="Medium" Text="&#x2022; Now begin turning a ball shape into a curved shape."/>
                 <Image x:Name="Test2" Aspect="AspectFit"/>
-                <Label Text="&#x2022;As you can see above"/>
-                <Label Text="&#x2022;It helps to cut out a pattern from a piece of cardboard."/>
+                <Label FontSize="Medium" Text="&#x2022;As you can see above"/>
+                <Label FontSize="Medium" Text="&#x2022;It helps to cut out a pattern from a piece of cardboard."/>
                 <Image x:Name="Test3" Aspect="AspectFit"/>
-                <Label Text="&#x2022;Use a parting tool to cut the tenons smaller outside the ball."/>
-                <Label Text="&#x2022;Step 3 will continue in making of bowl"/>
+                <Label FontSize="Medium" Text="&#x2022;Use a parting tool to cut the tenons smaller outside the ball."/>
+                <Label FontSize="Medium" Text="&#x2022;Step 3 will continue in making of bowl"/>
 
             </StackLayout>
         </ScrollView>

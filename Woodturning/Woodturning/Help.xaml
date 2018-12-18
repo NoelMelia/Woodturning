@@ -30,25 +30,24 @@
                                 </TapGestureRecognizer>
                             </ic:CircleImage.GestureRecognizers>
                         </ic:CircleImage>
-
-                        <Picker x:Name="MainPicker"
-                        
+                    <Picker x:Name="MainPicker"
+                            BackgroundColor="Beige"
                             Title="Select"
                             FontAttributes="Bold"
                             TextColor="Red"
                             WidthRequest="100"
                             HeightRequest="50"
                             HorizontalOptions="End"
-                            VerticalOptions="Start"
+                            VerticalOptions="Center"
                             SelectedIndexChanged="MainPicker_SelectedIndexChanged"
                             Margin="0,0,40,280">
-                        </Picker>
+                    </Picker>
 
 
 
-                   
-                    
-                        <!-- Drop Down Icon -->
+
+
+                    <!-- Drop Down Icon -->
                         <Label Text="Help Details"
                            FontAttributes="Bold"
                            FontSize="Medium"

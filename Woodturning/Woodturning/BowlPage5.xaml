@@ -10,13 +10,13 @@
                 HorizontalOptions="CenterAndExpand"
                    TextColor="Red"/>
                 <Image x:Name="Test" Aspect="AspectFit"/>
-                <Label Text="&#x2022;Remove this from the lathe and cut it in half with a handsaw."/>
-                <Label Text="&#x2022;If the tenon is small enough you may be able to simply twist the two apart."/>
-                <Label Text="&#x2022;You now have 2 side grain bowls."/>
+                <Label FontSize="Medium" Text="&#x2022;Remove this from the lathe and cut it in half with a handsaw."/>
+                <Label FontSize="Medium" Text="&#x2022;If the tenon is small enough you may be able to simply twist the two apart."/>
+                <Label FontSize="Medium" Text="&#x2022;You now have 2 side grain bowls."/>
                 <Image x:Name="Test2" Aspect="AspectFit"/>
-                <Label Text="&#x2022;Mount a faceplate with a waste piece of wood on the lathe and turn a small hole for the little tenon on the bowl bottom."/>
-                <Label Text="&#x2022;Then glue the bowl into the wasteblock."/>
-                <Label Text="&#x2022;Step 6 will continue in making of bowl"/>
+                <Label FontSize="Medium" Text="&#x2022;Mount a faceplate with a waste piece of wood on the lathe and turn a small hole for the little tenon on the bowl bottom."/>
+                <Label FontSize="Medium" Text="&#x2022;Then glue the bowl into the wasteblock."/>
+                <Label FontSize="Medium" Text="&#x2022;Step 6 will continue in making of bowl"/>
 
             </StackLayout>
         </ScrollView>

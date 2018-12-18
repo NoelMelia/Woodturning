@@ -10,9 +10,9 @@
                 HorizontalOptions="CenterAndExpand"
                    TextColor="Red"/>
                 <Image x:Name="Test" Aspect="AspectFit"/>
-                <Label Text="&#x2022;For this step it is best to use the tool specially made for this or you could use sand paper and a square."/>
-                <Label Text="&#x2022;This makes the wood flush and square with the tubes."/>
-                <Label Text="&#x2022; Be careful not to drill down to far because then the tube will stick out and in the final product you will have a gap in the joint of the pen."/>
+                <Label FontSize="Medium" Text="&#x2022;For this step it is best to use the tool specially made for this or you could use sand paper and a square."/>
+                <Label FontSize="Medium" Text="&#x2022;This makes the wood flush and square with the tubes."/>
+                <Label FontSize="Medium" Text="&#x2022; Be careful not to drill down to far because then the tube will stick out and in the final product you will have a gap in the joint of the pen."/>
                 <Image x:Name="Test2" Aspect="AspectFit"/>
             </StackLayout>
         </ScrollView>
