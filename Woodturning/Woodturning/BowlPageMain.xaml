@@ -4,7 +4,7 @@
              x:Class="Woodturning.BowlPageMain"
             xmlns:BowlPageMain="clr-namespace:Woodturning"
             xmlns:local="clr-namespace:Woodturning"
-            Title="Instructions on how to make a Wooden Bowl">
+            Title="How to Make a Wooden Bowl">
     
     <!--Naviagation Page to go through each page-->
     <!--I had to make the bowlmainpage global so i could access each page in this main page-->
