@@ -13,7 +13,7 @@ namespace Woodturning
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Login : ContentPage
 	{
-        //constant
+        //Creating a file in the local storage to store details of username and password and email
         private const String OUTPUT_FILE = "LoginDetails.txt";
         //Object
         Constants myConstants;
@@ -24,76 +24,79 @@ namespace Woodturning
         public Login()
         {
             InitializeComponent();
-            backgroundImage();
-            SetupImageOnThisPage();
-            pickerOfItems();          
-        }
+            BackgroundImage();//calling the background image
+            SetupImageOnThisPage();//calling the other image on page(logo)
+            PickerOfItems();//Calling the picker with items         
+        }//login
 
-        
-
-        private void backgroundImage()
+        //Method to make the background image on screen
+        private void BackgroundImage()
         {
+            //assigning the image to page
             var assembly = typeof(Login);
-
+            //locating the image in its folder
             string fileName = "Woodturning.Assets.Images.Objects.png";
-
+            //creating the image
             BackImage.Source = ImageSource.FromResource(fileName, assembly);
 
-        }
-        private void pickerOfItems()
+        }//background image
+
+        // json array to hold picker options
+        private void PickerOfItems()
         {
+            //from the xaml page i need to assign items
             MainPicker.ItemsSource = new string[]
                                             {"Login",
                                              "Register",
                                             "Contact Us",
                                             "Terms",
                                             "Help"};
-        }
+
+        }//PickerOfItems
+
+        //method setting up an image on the page
         private void SetupImageOnThisPage()
         {
+            //same as above but small image
             var assembly = typeof(Login);
 
             string fileName = "Woodturning.Assets.Images.Newlogo.png";
 
             newLogo.Source = ImageSource.FromResource(fileName, assembly);
+        }//SetupImageOnThisPage
 
-            
-        }
+        //Picker method to see assign pages to the picked item
         private void MainPicker_SelectedIndexChanged(object sender, EventArgs e)
         {
             var picker = (Picker)sender;
             MainPicker.MinimumHeightRequest = 20;
-
             switch (picker.SelectedIndex)
             {
-                case 0:
+                case 0://Goes to Login Page
                     Navigation.PushAsync(new Login());
                     break;
-                case 1:
+                case 1://Goes to Register Page
                     Navigation.PushAsync(new Register());
                     break;
-                case 2:
+                case 2://Goes to ContactUs Page
                     Navigation.PushAsync(new ContactUs());
                     break;
-                case 3:
+                case 3://Goes to Terms Page
                     Navigation.PushAsync(new Terms());
                     break;
-                case 4:
+                case 4://Goes to Help Page
                     Navigation.PushAsync(new Help());
                     break;
-
                 default:
                     break;
+            }//switch
+        }//MainPicker_SelectedIndexChanged
 
-
-
-            }
-
-        }
+        //when the register button is clicked
         async void OnSignUpButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Register());
-        }
+            await Navigation.PushAsync(new Register());// goes to the register page
+        }//OnSignUpButtonClicked
 
         void OnLoginButtonClicked(object sender, EventArgs e)
         {
@@ -125,13 +128,14 @@ namespace Woodturning
                         if (Username == (string)name && Password == (string)pass)
                         {
                             App.IsUserLoggedIn = true;
-
+                            //Goes to the mainpage if details are true and correct
                             Navigation.InsertPageBefore(new MainPage(), this);
                             Navigation.PopAsync();
 
                         }
                         else
                         {
+                            //gives an error message if false
                             messageLabel.Text = "Login failed";
                             passwordEntry.Text = string.Empty;
                         }
@@ -156,31 +160,13 @@ namespace Woodturning
    
             }
 
-            //var isValid = AreCredentialsCorrect(user);
-            //if (isValid)
-            //{
-            //    App.IsUserLoggedIn = true;
 
-            //    Navigation.InsertPageBefore(new MainPage(), this);
-            //    await Navigation.PopAsync();
-            //}
-            //else
-            //{
-            //    messageLabel.Text = "Login failed";
-            //    passwordEntry.Text = string.Empty;
-            //}
         }//CLICKED
 
+        //method to check if useranme matches input
         bool AreCredentialsCorrect(User user)
         {
             return user.Username == Constants.Uname && user.Password == Constants.Pword;
-        }
-
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new MainPage());
-        }
-
-
+        }//AreCredentialsCorrect
     }
 }

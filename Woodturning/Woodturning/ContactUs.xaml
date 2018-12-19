@@ -6,32 +6,32 @@
              x:Class="Woodturning.ContactUs"
              BackgroundImage="Objects.png"
              Padding="0,20,0,0" 
-        Title="Contact Us Page"
-    >
+            Title="Contact Us Page" >
+    <!--Imported a plugin to make the image round-->
     <ContentPage.Content>
-        <StackLayout  Orientation="Vertical">
+        <StackLayout>
             <Grid>
+                <!--Making the background image inside a grid-->
                 <Image x:Name="BackImage" Aspect="Fill"/>
-
-                <ic:CircleImage 
+                <StackLayout VerticalOptions="Start">
+                    <!--This a rounded image with a tapped gesture that goes to another page-->
+                    <ic:CircleImage 
                         x:Name="newLogo" 
                             WidthRequest="150"
                             HeightRequest="150"
                             HorizontalOptions="Center"
                             VerticalOptions="Start"
-                            Margin="0,60,0,0">
-                    <ic:CircleImage.GestureRecognizers>
-                        <TapGestureRecognizer 
+                            Margin="0,40,0,0">
+                        <ic:CircleImage.GestureRecognizers>
+                            <TapGestureRecognizer 
                                     Tapped="TapGestureRecognizer_Tapped"
                                     NumberOfTapsRequired="1">
-                        </TapGestureRecognizer>
-                    </ic:CircleImage.GestureRecognizers>
+                            </TapGestureRecognizer>
+                        </ic:CircleImage.GestureRecognizers>
+                    </ic:CircleImage>
 
-
-                </ic:CircleImage>
-
-
-                <Picker x:Name="MainPicker"
+                    <!--Picker with details-->
+                    <Picker x:Name="MainPicker"
                             BackgroundColor="Beige"
                             Title="Select"
                             FontAttributes="Bold"
@@ -41,59 +41,45 @@
                             HorizontalOptions="End"
                             VerticalOptions="Center"
                             SelectedIndexChanged="MainPicker_SelectedIndexChanged"
-                            Margin="0,0,40,280">
-                </Picker>
-
-                <!-- Drop Down Icon -->
-                
-                    <!-- Drop Down Icon -->
-                    <Label Text="Contact Us"
-                           FontAttributes="Bold"
-                           FontSize="Medium"
-                           Margin="30,0,30,80"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           TextColor="Red"/>
-                    <Label Text="Contact Details"
-                           FontAttributes="Bold"
-                           FontSize="Medium"
-                           Margin="30,40,30,0"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           TextColor="Red"/>
-                    <Label Text="Company Name: NMT Woodturning"
-                           FontAttributes="Italic"
-                           FontSize="Default"
-                           Margin="30,100,30,0"
-                               TextColor="White"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           />
-                    <Label Text="Email Address: noelmelia1989@yahoo.co.uk"
-                           FontAttributes="Italic"
-                           FontSize="Default"
-                           Margin="30,140,30,0"
-                               TextColor="White"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           />
-                    <Label Text="Phone Number: noelmelia1989@yahoo.co.uk"
-                           FontAttributes="Italic"
-                           FontSize="Default"
-                           Margin="30,180,30,0"
-                               TextColor="White"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           />
-                    <Label Text="You can contact the company between the opening hours of 9am to 5pm, Monday to Friday"
-                           FontAttributes="Italic"
-                           FontSize="Default"
-                           Margin="30,220,30,0"
-                               TextColor="White"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           />
-                
+                            Margin="0,-120,40,0">
+                    </Picker>
+                </StackLayout>
+                <!--Labels-->
+                <Label Text="Contact Details"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Margin="30,40,30,0"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        TextColor="Red"/>
+                <Label Text="Company Name: NMT Woodturning"
+                        FontAttributes="Italic"
+                        FontSize="Default"
+                        Margin="30,100,30,0"
+                            TextColor="White"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                <Label Text="Email Address: noelmelia1989@yahoo.co.uk"
+                        FontAttributes="Italic"
+                        FontSize="Default"
+                        Margin="30,140,30,0"
+                            TextColor="White"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center" />
+                <Label Text="Phone Number: noelmelia1989@yahoo.co.uk"
+                        FontAttributes="Italic"
+                        FontSize="Default"
+                        Margin="30,180,30,0"
+                            TextColor="White"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center" />
+                <Label Text="You can contact the company between the opening hours of 9am to 5pm, Monday to Friday"
+                        FontAttributes="Italic"
+                        FontSize="Default"
+                        Margin="30,220,30,0"
+                            TextColor="White"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center" />
             </Grid>
         </StackLayout>
     </ContentPage.Content>

@@ -5,62 +5,56 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Woodturning.Login" Title="Login"
     xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
-
+    <!--Imported a plugin to make the image round-->
     <ContentPage.Content>
-        <StackLayout  Orientation="Vertical">
+        <StackLayout>
             <Grid>
+                <!--Making the background image inside a grid-->
                 <Image x:Name="BackImage" Aspect="Fill"/>
-                    <StackLayout VerticalOptions="Center">
-
-                        <ic:CircleImage 
-                            x:Name="newLogo" 
-                                WidthRequest="150"
-                                HeightRequest="150"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"
-                                Margin="0,10,0,10"
-                                Aspect="AspectFit">
-                            <ic:CircleImage.GestureRecognizers>
-                                <TapGestureRecognizer 
-                                    Tapped="TapGestureRecognizer_Tapped"
-                                    NumberOfTapsRequired="1">
-                                </TapGestureRecognizer>
-                            </ic:CircleImage.GestureRecognizers>
-
-
-                        </ic:CircleImage>
-
-                        <Picker x:Name="MainPicker"
-                                BackgroundColor="Beige"
-                                Title="Select"
-                                FontAttributes="Bold"
-                                TextColor="Red"
-                                WidthRequest="100"
-                                HeightRequest="50"
-                                HorizontalOptions="End"
-                                VerticalOptions="Center"
-                                SelectedIndexChanged="MainPicker_SelectedIndexChanged"
-                                Margin="0,0,40,20">
-                        </Picker>
-                
-                        <Label FontSize="Large" 
+                <StackLayout VerticalOptions="Start">
+                    <!--This a rounded image with a tapped gesture that goes to another page-->
+                    <ic:CircleImage 
+                        x:Name="newLogo" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="0,40,0,0"
+                        Aspect="AspectFit">
+                    </ic:CircleImage>
+                    <!--Picker with details-->
+                    <Picker x:Name="MainPicker"
+                            BackgroundColor="Beige"
+                            Title="Select"
+                            FontAttributes="Bold"
+                            TextColor="Red"
+                            WidthRequest="100"
+                            HeightRequest="50"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            SelectedIndexChanged="MainPicker_SelectedIndexChanged"
+                            Margin="0,-120,40,0">
+                    </Picker>
+                </StackLayout>
+                <StackLayout VerticalOptions="Center">
+                    <!--Label-->
+                    <Label FontSize="Large" 
                                HorizontalOptions="Center" 
                                Text="Login Form" 
                                TextColor="Red"
                                Margin="0,20,0,0"/>
-                        <Frame>
-                            <StackLayout>
-                                <Entry Margin="0,0,0,0" Placeholder="Username" HorizontalOptions="Fill" x:Name="usernameEntry"/>
-                                <Entry Placeholder="Password" IsPassword="true" HorizontalOptions="Fill" x:Name="passwordEntry"/>
-                                <Button Text="Log In" Clicked="OnLoginButtonClicked" TextColor="White"  BackgroundColor="Gray" HorizontalOptions="Fill" />
-                                <Button Text="Sign Up" Clicked="OnSignUpButtonClicked"  TextColor="White"  BackgroundColor="Gray" HorizontalOptions="Fill" />
-                                <Label x:Name="messageLabel" />
-                            </StackLayout>
-                        </Frame>
-                    </StackLayout>
+                    <!--Login Form-->
+                    <Frame>
+                        <StackLayout>
+                            <Entry Margin="0,0,0,0" Placeholder="Username" HorizontalOptions="Fill" x:Name="usernameEntry"/>
+                            <Entry Placeholder="Password" IsPassword="true" HorizontalOptions="Fill" x:Name="passwordEntry"/>
+                            <Button Text="Log In" Clicked="OnLoginButtonClicked" TextColor="White"  BackgroundColor="Gray" HorizontalOptions="Fill" />
+                            <Button Text="Sign Up" Clicked="OnSignUpButtonClicked"  TextColor="White"  BackgroundColor="Gray" HorizontalOptions="Fill" />
+                            <Label x:Name="messageLabel" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
             </Grid>
         </StackLayout>
-            
-        
     </ContentPage.Content>
 </ContentPage>

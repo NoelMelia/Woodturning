@@ -6,23 +6,23 @@
              x:Class="Woodturning.Help"
              BackgroundImage="Objects.png"
              Padding="0,20,0,0"
-             Title="Help Page"
-        
-    >
+             Title="Help Page" >
+    <!--Imported a plugin to make the image round-->
     <ContentPage.Content>
         <StackLayout>
-
-            <StackLayout  Orientation="Vertical">
+            <StackLayout>
                 <Grid>
+                    <!--Making the background image inside a grid-->
                     <Image x:Name="BackImage" Aspect="Fill"/>
-                    
+                    <StackLayout VerticalOptions="Start">
+                        <!--This a rounded image with a tapped gesture that goes to another page-->
                         <ic:CircleImage 
                         x:Name="newLogo" 
                             WidthRequest="150"
                             HeightRequest="150"
                             HorizontalOptions="Center"
                             VerticalOptions="Start"
-                            Margin="0,60,0,0">
+                            Margin="0,40,0,0">
                             <ic:CircleImage.GestureRecognizers>
                                 <TapGestureRecognizer 
                                     Tapped="TapGestureRecognizer_Tapped"
@@ -30,39 +30,34 @@
                                 </TapGestureRecognizer>
                             </ic:CircleImage.GestureRecognizers>
                         </ic:CircleImage>
-                    <Picker x:Name="MainPicker"
-                            BackgroundColor="Beige"
-                            Title="Select"
-                            FontAttributes="Bold"
-                            TextColor="Red"
-                            WidthRequest="100"
-                            HeightRequest="50"
-                            HorizontalOptions="End"
-                            VerticalOptions="Center"
-                            SelectedIndexChanged="MainPicker_SelectedIndexChanged"
-                            Margin="0,0,40,280">
-                    </Picker>
-
-
-
-
-
-                    <!-- Drop Down Icon -->
-                        <Label Text="Help Details"
+                        <!--Picker with details-->
+                        <Picker x:Name="MainPicker"
+                                    BackgroundColor="Beige"
+                                    Title="Select"
+                                    FontAttributes="Bold"
+                                    TextColor="Red"
+                                    WidthRequest="100"
+                                    HeightRequest="50"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Start"
+                                    SelectedIndexChanged="MainPicker_SelectedIndexChanged"
+                                    Margin="0,-120,40,0">
+                        </Picker>
+                    </StackLayout>
+                    <!--Labels-->
+                    <Label Text="Help Details"
                            FontAttributes="Bold"
                            FontSize="Medium"
                            Margin="30,0,30,80"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            TextColor="Red"/>
-                        <Label Text=" If you're having trouble accessing a NMT Woodturning product, there's a chance we're currently experiencing a temporary problem. Please Send on a email to noelmelia1989@yahoo.co.uk. Thank you."
+                    <Label Text=" If you're having trouble accessing a NMT Woodturning product, there's a chance we're currently experiencing a temporary problem. Please Send on a email to noelmelia1989@yahoo.co.uk. Thank you."
                            FontAttributes="Italic"
                            FontSize="Default"
                            Margin="30,180,30,0"
-                               TextColor="White"
-                           VerticalOptions="Center"
-                           />
-                    
+                           TextColor="White"
+                           VerticalOptions="Center"/>
                 </Grid>
             </StackLayout>
         </StackLayout>

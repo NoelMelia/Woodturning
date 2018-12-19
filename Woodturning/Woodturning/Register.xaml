@@ -5,34 +5,23 @@
 			 x:Class="Woodturning.Register"
 			 Title="Sign Up"
              >
+    <!--Imported a plugin to make the image round-->
     <ContentPage.Content>
-
-        
-
-            <StackLayout  Orientation="Vertical">
-                <Grid>
-                    <Image x:Name="BackImage" Aspect="Fill"/>
-
-                    <StackLayout VerticalOptions="Center">
-
-                        <ic:CircleImage 
-                            x:Name="newLogo" 
-                                WidthRequest="150"
+        <StackLayout  Orientation="Vertical">
+            <Grid>
+                <!--Making the background image inside a grid-->
+                <Image x:Name="BackImage" Aspect="Fill"/>
+                <StackLayout  VerticalOptions="Start">
+                    <!--This a rounded image with a tapped gesture that goes to another page-->
+                    <ic:CircleImage 
+                        x:Name="newLogo" 
+                            WidthRequest="150"
                             HeightRequest="150"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"
-                                Margin="0,10,0,10">
-                            <ic:CircleImage.GestureRecognizers>
-                                <TapGestureRecognizer 
-                                        Tapped="TapGestureRecognizer_Tapped"
-                                        NumberOfTapsRequired="1">
-                                </TapGestureRecognizer>
-                            </ic:CircleImage.GestureRecognizers>
-
-
-                        </ic:CircleImage>
-
-
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Margin="0,40,0,0">
+                    </ic:CircleImage>
+                    <!--Picker with details-->
                     <Picker x:Name="MainPicker"
                             BackgroundColor="Beige"
                             Title="Select"
@@ -41,34 +30,31 @@
                             WidthRequest="100"
                             HeightRequest="50"
                             HorizontalOptions="End"
-                            VerticalOptions="Center"
+                            VerticalOptions="Start"  
                             SelectedIndexChanged="MainPicker_SelectedIndexChanged"
-                            Margin="0,0,40,20">
+                            Margin="0,-120,40,0">
                     </Picker>
-
-
-
-
-
-
+                </StackLayout>
+                <StackLayout VerticalOptions="Center" >
+                    <!--Label-->
                     <Label FontSize="Large" 
                                HorizontalOptions="Center" 
                                Text="Register Form" 
                                TextColor="Red"
                                Margin="0,20,0,0"/>
-                        <Frame>
-                            <StackLayout>
-                                <Entry Margin="0,0,0,0" Placeholder="Username" HorizontalOptions="Fill" x:Name="usernameEntry"/>
-                                <Entry Placeholder="Password" IsPassword="true" HorizontalOptions="Fill" x:Name="passwordEntry"/>
-                                <Entry Placeholder="Email address" x:Name="emailEntry" HorizontalOptions="Fill" />
-                                <Button Text="Sign Up" Clicked="OnSignUpButtonClicked" TextColor="White"  BackgroundColor="Gray" HorizontalOptions="Fill" />
-                                <Button Text="Log In" Clicked="Login_Button_Clicked" TextColor="White"  BackgroundColor="Gray" HorizontalOptions="Fill" />
-                                <Label x:Name="messageLabel" />
-                            </StackLayout>
-                        </Frame>
-                    </StackLayout>
-                </Grid>
-            </StackLayout>
-        
+                    <!--Register Form-->
+                    <Frame>
+                        <StackLayout>
+                            <Entry Margin="0,0,0,0" Placeholder="Username" HorizontalOptions="Fill" x:Name="usernameEntry"/>
+                            <Entry Placeholder="Password" IsPassword="true" HorizontalOptions="Fill" x:Name="passwordEntry"/>
+                            <Entry Placeholder="Email address" x:Name="emailEntry" HorizontalOptions="Fill" />
+                            <Button Text="Sign Up" Clicked="OnSignUpButtonClicked" TextColor="White"  BackgroundColor="Gray" HorizontalOptions="Fill" />
+                            <Button Text="Log In" Clicked="Login_Button_Clicked" TextColor="White"  BackgroundColor="Gray" HorizontalOptions="Fill" />
+                            <Label x:Name="messageLabel" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

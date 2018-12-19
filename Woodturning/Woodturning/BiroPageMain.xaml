@@ -6,7 +6,8 @@
             xmlns:BiroPageMain="clr-namespace:Woodturning"
             Title="Instructions on how to make a Wooden Biro">
 
-
+    <!--Naviagation Page to go through each page-->
+    <!--I had to make the biromainpage global so i could access each page in this main page-->
     <BiroPageMain:BiroPage1 Title="1" />
     <BiroPageMain:BiroPage2 Title="2"/>
     <BiroPageMain:BiroPage3 Title="3"/>

@@ -6,6 +6,7 @@ namespace Woodturning
 {
     public class User
     {
+        // properties
         public string Username { get; set; }
 
         public string Password { get; set; }
