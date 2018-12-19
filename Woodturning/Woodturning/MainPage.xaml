@@ -5,31 +5,25 @@
              xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              x:Class="Woodturning.MainPage"
              BackgroundImage="Objects.png"
-             Padding="0,20,0,0" 
-        
-    >
+             Padding="0,20,0,0" >
+    <!--Imported a plugin to make the image round-->
     <ContentPage.Content>
         <StackLayout>
-            <!-- Logo -->
-            <StackLayout  Orientation="Vertical">
-                <Grid>
-                    <Image x:Name="BackImage" Aspect="Fill"/>
+            <Grid>
+                <Label x:Name="welcomeLabel" />
+                <!--Making the background image inside a grid-->
+                <Image x:Name="BackImage" Aspect="Fill"/>
+                <StackLayout VerticalOptions="Start">
+                    <!--This a rounded image with a tapped gesture that goes to another page-->
                     <ic:CircleImage 
                         x:Name="newLogo" 
                             WidthRequest="150"
                             HeightRequest="150"
                             HorizontalOptions="Center"
                             VerticalOptions="Start"
-                            Margin="0,10,0,0">
-                        <ic:CircleImage.GestureRecognizers>
-                            <TapGestureRecognizer 
-                                    Tapped="TapGestureRecognizer_Tapped"
-                                    NumberOfTapsRequired="1">
-                            </TapGestureRecognizer>
-                        </ic:CircleImage.GestureRecognizers>
-
-
+                            Margin="0,40,0,0">
                     </ic:CircleImage>
+                    <!--Picker with details-->
                     <Picker x:Name="MainPicker"
                             BackgroundColor="Beige"
                             Title="Select"
@@ -38,15 +32,15 @@
                             WidthRequest="100"
                             HeightRequest="50"
                             HorizontalOptions="End"
-                            VerticalOptions="Center"
+                            VerticalOptions="Start"
                             SelectedIndexChanged="MainPicker_SelectedIndexChanged"
-                            Margin="0,0,40,280">
+                            Margin="0,-120,40,0">
                     </Picker>
-                    <!-- Drop Down Icon -->
+                </StackLayout>
 
-                    <StackLayout VerticalOptions="Center">
-                        <!-- Button -->
-                        <Button x:Name="bowl" 
+                <StackLayout VerticalOptions="Center">
+                    <!-- Bowl Button -->
+                    <Button x:Name="bowl" 
                     VerticalOptions="Center" 
                     Text="How to Make a Wooden Bowls"
                     FontAttributes="Italic"
@@ -58,8 +52,8 @@
                     BackgroundColor="Brown"
                     />
 
-                        <!-- Button -->
-                        <Button x:Name="biro" 
+                    <!-- Biro Button -->
+                    <Button x:Name="biro" 
                     VerticalOptions="Center" 
                     Text="How to Make a Wooden Biros"
                     FontAttributes="Italic"
@@ -69,10 +63,8 @@
                     FontSize="Medium"
                     TextColor="OrangeRed"
                     BackgroundColor="Brown"/>
-                    </StackLayout>
-                </Grid>
-            </StackLayout>
-
+                </StackLayout>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

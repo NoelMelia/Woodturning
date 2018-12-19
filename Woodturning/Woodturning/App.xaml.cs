@@ -13,11 +13,12 @@ namespace Woodturning
         {
             InitializeComponent();
             
-
+            //if the user ist logged in then go to login page 
             if (!IsUserLoggedIn)
             {
                 MainPage = new NavigationPage(new Login());
             }
+            //otherwise go to homepage
             else
             {
                 MainPage = new NavigationPage(new MainPage());
